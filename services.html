@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Freelancer Portfolio</title>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="stackly-header" id="stacklyHeader">
+    <div class="header-container">
+
+      <!-- LOGO -->
+      <a href="index.html" class="stackly-logo" aria-label="Stackly Home">
+        <img src="assets/yellow-logo.webp" alt="Stackly Logo">
+      </a>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="desktop-navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- RIGHT ACTIONS -->
+      <div class="header-actions">
+        <a href="login.html" class="header-login">Login</a>
+        <a href="signup.html" class="header-signup">Sign Up</a>
+      </div>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileNavigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- MOBILE FULL-VIEWPORT NAVIGATION -->
+    <nav
+      class="mobile-navigation"
+      id="mobileNavigation"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+      inert
+    >
+      <div class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="services.html" class="mobile-nav-link active">Services</a>
+        <a href="blog.html" class="mobile-nav-link">Blog</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+        <div class="mobile-auth-links">
+          <a href="login.html" class="mobile-login">Login</a>
+          <a href="signup.html" class="mobile-signup">Sign Up</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-footer">
+        <span>CREATIVE MINDS. DIGITAL EXPERIENCES.</span>
+      </div>
+    </nav>
+
+  </header>
+
+
+
+<!-- SERVICES PAGE HERO -->
+<section class="services-page-hero">
+  <div class="services-hero-bg"></div>
+  <div class="services-hero-overlay"></div>
+
+  <div class="services-hero-content">
+    <h1 class="services-hero-title">Our Services</h1>
+
+    <nav class="services-breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="material-symbols-outlined">chevron_right</span>
+      <span aria-current="page">Our Services</span>
+    </nav>
+  </div>
+</section>
+
+
+
+<!-- ===== FREELANCER SERVICES SHOWCASE ===== -->
+<section class="fp-services" id="freelancer-services">
+  <div class="fp-services-container">
+
+    <!-- HEADER -->
+    <div class="fp-services-header">
+      <div class="fp-services-heading">
+        <div class="fp-services-label fp-service-reveal-left">
+          <span class="material-symbols-outlined">flare</span>
+          <span>WHAT I DO</span>
+        </div>
+
+        <h2 class="fp-services-main-title fp-service-reveal-left">
+          Creative Services Built
+          <br />
+          Around Your <span>Vision</span>
+        </h2>
+      </div>
+
+      <div class="fp-services-intro fp-service-reveal-right">
+        <p>
+          I combine creativity, strategy and modern technology to
+          deliver digital experiences that help your brand grow,
+          connect with people and stand out.
+        </p>
+
+        <a href="contact.html" class="fp-services-talk">
+          LET'S TALK
+          <span class="material-symbols-outlined">north_east</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE LIST + DETAIL CARD -->
+    <div class="fp-services-layout">
+
+      <!-- LEFT: CLICKABLE SERVICES -->
+      <div class="fp-services-list fp-service-reveal-left">
+
+        <button class="fp-service-option active"
+          type="button"
+          data-service="0"
+          aria-pressed="true">
+          <span class="fp-service-number">01.</span>
+          <span class="fp-service-name">UI/UX Design</span>
+        </button>
+
+        <button class="fp-service-option"
+          type="button"
+          data-service="1"
+          aria-pressed="false">
+          <span class="fp-service-number">02.</span>
+          <span class="fp-service-name">Website Development</span>
+        </button>
+
+        <button class="fp-service-option"
+          type="button"
+          data-service="2"
+          aria-pressed="false">
+          <span class="fp-service-number">03.</span>
+          <span class="fp-service-name">Creative Branding</span>
+        </button>
+
+        <button class="fp-service-option"
+          type="button"
+          data-service="3"
+          aria-pressed="false">
+          <span class="fp-service-number">04.</span>
+          <span class="fp-service-name">Motion & Interaction</span>
+        </button>
+
+        <button class="fp-service-option"
+          type="button"
+          data-service="4"
+          aria-pressed="false">
+          <span class="fp-service-number">05.</span>
+          <span class="fp-service-name">Website Optimization</span>
+        </button>
+
+      </div>
+
+      <!-- RIGHT: DYNAMIC SERVICE CARD -->
+      <div class="fp-service-detail-wrap fp-service-reveal-right">
+
+        <article class="fp-service-detail" aria-live="polite">
+
+          <div class="fp-service-image-wrap">
+            <img
+              class="fp-service-image"
+              src="assets/team-1.webp"
+              alt="Designer creating a user interface"
+            />
+
+            <div class="fp-service-image-shade"></div>
+
+            <div class="fp-service-icon">
+              <span class="material-symbols-outlined">
+                design_services
+              </span>
+            </div>
+          </div>
+
+          <div class="fp-service-detail-content">
+            <h3 class="fp-service-detail-title">UI/UX Design</h3>
+
+            <p class="fp-service-detail-description">
+              Intuitive interfaces and thoughtful user journeys
+              designed around real people.
+            </p>
+
+            <a href="contact.html" class="fp-service-cta">
+              <span>EXPLORE SERVICE</span>
+              <span class="material-symbols-outlined">add</span>
+            </a>
+          </div>
+
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== CREATIVE JOURNEY TIMELINE ===== -->
+<section class="fp-timeline" id="creative-journey">
+  <div class="fp-timeline-container">
+
+    <!-- SECTION HEADER -->
+    <div class="fp-timeline-header">
+      <div class="fp-timeline-eyebrow fp-timeline-heading-reveal">
+        <span class="material-symbols-outlined">timeline</span>
+        <span>MY CREATIVE JOURNEY</span>
+      </div>
+
+      <h2 class="fp-timeline-title fp-timeline-heading-reveal">
+        From First Ideas to
+        <span>Digital Impact.</span>
+      </h2>
+
+      <p class="fp-timeline-description fp-timeline-heading-reveal">
+        Every great digital experience starts with an idea. My process
+        brings together strategy, creativity and development to turn
+        ambitious concepts into meaningful online experiences.
+      </p>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="fp-timeline-track">
+
+      <!-- ITEM 01 -->
+      <article class="fp-timeline-item fp-timeline-left">
+        <span class="fp-timeline-node">01</span>
+
+        <div class="fp-timeline-card">
+          <span class="fp-timeline-step">STEP 01 / DISCOVERY</span>
+          <h3>Understanding the Vision</h3>
+          <p>
+            Every project begins with listening. I explore your goals,
+            audience and ideas to understand what makes your brand
+            unique and what success should look like.
+          </p>
+          <div class="fp-timeline-tags">
+            <span>Research</span>
+            <span>Planning</span>
+            <span>Strategy</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 02 -->
+      <article class="fp-timeline-item fp-timeline-right">
+        <span class="fp-timeline-node">02</span>
+
+        <div class="fp-timeline-card">
+          <span class="fp-timeline-step">STEP 02 / DIRECTION</span>
+          <h3>Shaping the Concept</h3>
+          <p>
+            I turn project requirements into a clear creative direction,
+            defining the structure, visual language and user journey
+            before moving into design and development.
+          </p>
+          <div class="fp-timeline-tags">
+            <span>Wireframes</span>
+            <span>Visual Direction</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 03 -->
+      <article class="fp-timeline-item fp-timeline-left">
+        <span class="fp-timeline-node">03</span>
+
+        <div class="fp-timeline-card">
+          <span class="fp-timeline-step">STEP 03 / DESIGN</span>
+          <h3>Designing with Purpose</h3>
+          <p>
+            I create clean, engaging interfaces that balance visual
+            appeal with usability, keeping every layout consistent,
+            accessible and focused on the people using it.
+          </p>
+          <div class="fp-timeline-tags">
+            <span>UI/UX</span>
+            <span>Responsive Design</span>
+            <span>Consistency</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 04 -->
+      <article class="fp-timeline-item fp-timeline-right">
+        <span class="fp-timeline-node">04</span>
+
+        <div class="fp-timeline-card">
+          <span class="fp-timeline-step">STEP 04 / DEVELOPMENT</span>
+          <h3>Bringing Ideas to Life</h3>
+          <p>
+            With the design in place, I build responsive digital
+            experiences using modern frontend technologies, smooth
+            interactions and carefully structured code.
+          </p>
+          <div class="fp-timeline-tags">
+            <span>HTML & CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 05 -->
+      <article class="fp-timeline-item fp-timeline-left">
+        <span class="fp-timeline-node">05</span>
+
+        <div class="fp-timeline-card">
+          <span class="fp-timeline-step">STEP 05 / REFINEMENT</span>
+          <h3>Perfecting Every Detail</h3>
+          <p>
+            I review layouts, test interactions and refine responsive
+            behavior to create a consistent experience across desktop,
+            tablet and mobile screens.
+          </p>
+          <div class="fp-timeline-tags">
+            <span>Testing</span>
+            <span>Accessibility</span>
+            <span>Performance</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ITEM 06 -->
+      <article class="fp-timeline-item fp-timeline-right">
+        <span class="fp-timeline-node">06</span>
+
+        <div class="fp-timeline-card">
+          <span class="fp-timeline-step">STEP 06 / DELIVERY</span>
+          <h3>Ready to Make an Impact</h3>
+          <p>
+            The final experience is prepared for launch with attention
+            to quality, functionality and presentation, ready to help
+            your brand connect with its audience.
+          </p>
+          <div class="fp-timeline-tags">
+            <span>Final Review</span>
+            <span>Launch</span>
+            <span>Support</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- BOTTOM CTA -->
+    <div class="fp-timeline-footer fp-timeline-heading-reveal">
+      <p>Have an idea worth bringing to life?</p>
+      <a href="contact.html" class="fp-timeline-cta">
+        LET'S CREATE SOMETHING
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===== FREELANCER SERVICE PACKAGES ===== -->
+<section class="fp-pricing" id="freelancer-pricing">
+  <div class="fp-pricing-container">
+
+    <div class="fp-pricing-header">
+      <div class="fp-pricing-heading">
+        <div class="fp-pricing-label fp-price-reveal">
+          <span class="material-symbols-outlined">sell</span>
+          <span>FREELANCE PACKAGES</span>
+        </div>
+
+        <h2 class="fp-pricing-title fp-price-reveal">
+          Creative Work.
+          <br />
+          <span>Clear Investment.</span>
+        </h2>
+      </div>
+
+      <div class="fp-pricing-intro fp-price-reveal">
+        <p>
+          Flexible packages for individuals, startups and growing brands.
+          Choose the right starting point for your next digital project.
+        </p>
+        <a href="contact.html" class="fp-pricing-view-link">
+          Discuss Your Project
+          <span class="material-symbols-outlined">north_east</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="fp-pricing-grid">
+
+      <!-- STARTER -->
+      <article class="fp-price-card fp-price-left">
+        <div class="fp-price-card-top">
+          <div>
+            <span class="fp-price-kicker">01 / GET STARTED</span>
+            <h3>Starter</h3>
+          </div>
+          <div class="fp-price-icon">
+            <span class="material-symbols-outlined">web</span>
+          </div>
+        </div>
+
+        <p class="fp-price-summary">
+          A polished online presence for personal brands and small projects.
+        </p>
+
+        <div class="fp-price-amount">
+          <span class="fp-price-currency">₹</span>
+          <span class="fp-price-value">5,999</span>
+          <span class="fp-price-period">/ project</span>
+        </div>
+
+        <div class="fp-price-divider"></div>
+
+        <p class="fp-price-includes">WHAT'S INCLUDED</p>
+        <ul class="fp-price-features">
+          <li><span class="material-symbols-outlined">check_circle</span> Single-page website</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Responsive mobile design</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Modern UI styling</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Contact section</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Basic performance setup</li>
+        </ul>
+
+        <a href="contact.html" class="fp-price-button">
+          Choose Starter
+        </a>
+      </article>
+
+      <!-- PROFESSIONAL -->
+      <article class="fp-price-card fp-price-featured fp-price-right">
+        <div class="fp-price-badge">MOST POPULAR</div>
+
+        <div class="fp-price-card-top">
+          <div>
+            <span class="fp-price-kicker">02 / LEVEL UP</span>
+            <h3>Professional</h3>
+          </div>
+          <div class="fp-price-icon">
+            <span class="material-symbols-outlined">design_services</span>
+          </div>
+        </div>
+
+        <p class="fp-price-summary">
+          A complete website experience for brands ready to stand out.
+        </p>
+
+        <div class="fp-price-amount">
+          <span class="fp-price-currency">₹</span>
+          <span class="fp-price-value">12,999</span>
+          <span class="fp-price-period">/ project</span>
+        </div>
+
+        <div class="fp-price-divider"></div>
+
+        <p class="fp-price-includes">WHAT'S INCLUDED</p>
+        <ul class="fp-price-features">
+          <li><span class="material-symbols-outlined">check_circle</span> Multi-section website</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Custom UI/UX design</li>
+          <li><span class="material-symbols-outlined">check_circle</span> GSAP motion effects</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Responsive page layouts</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Basic SEO and optimization</li>
+        </ul>
+
+        <a href="contact.html" class="fp-price-button">
+          Choose Professional
+        </a>
+      </article>
+
+      <!-- PREMIUM -->
+      <article class="fp-price-card fp-price-left">
+        <div class="fp-price-card-top">
+          <div>
+            <span class="fp-price-kicker">03 / GO FURTHER</span>
+            <h3>Premium</h3>
+          </div>
+          <div class="fp-price-icon">
+            <span class="material-symbols-outlined">rocket_launch</span>
+          </div>
+        </div>
+
+        <p class="fp-price-summary">
+          A tailored digital experience for ambitious brands and businesses.
+        </p>
+
+        <div class="fp-price-amount">
+          <span class="fp-price-currency">₹</span>
+          <span class="fp-price-value">24,999</span>
+          <span class="fp-price-period">/ project</span>
+        </div>
+
+        <div class="fp-price-divider"></div>
+
+        <p class="fp-price-includes">WHAT'S INCLUDED</p>
+        <ul class="fp-price-features">
+          <li><span class="material-symbols-outlined">check_circle</span> Custom multi-page website</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Advanced UI/UX direction</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Custom GSAP animations</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Performance refinement</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Launch support</li>
+        </ul>
+
+        <a href="contact.html" class="fp-price-button">
+          Choose Premium
+        </a>
+      </article>
+
+    </div>
+
+    <p class="fp-pricing-note fp-price-reveal">
+      Need something different?
+      <a href="contact.html">Let's discuss</a>
+    </p>
+
+  </div>
+</section>
+
+<!-- FREELANCER FAQ SECTION -->
+<section class="fp-faq-section" id="freelancer-faq">
+  <div class="fp-faq-container">
+
+    <!-- LEFT IMAGE -->
+    <div class="fp-faq-image fp-faq-image-reveal">
+      <img
+        src="assets/creative-agency.webp"
+        alt="Creative team discussing a freelancer project"
+        loading="lazy"
+      />
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="fp-faq-content">
+
+      <div class="fp-faq-label fp-faq-reveal">
+        <span class="material-symbols-outlined">help</span>
+        <span>FAQ'S</span>
+      </div>
+
+      <h2 class="fp-faq-title fp-faq-reveal">
+        Common Questions About
+        <span>Our Creative Services</span>
+      </h2>
+
+      <div class="fp-faq-list">
+
+        <div class="fp-faq-item fp-faq-reveal">
+          <button class="fp-faq-question" aria-expanded="false">
+            <span>What services do you offer as a freelancer?</span>
+            <span class="fp-faq-icon">+</span>
+          </button>
+          <div class="fp-faq-answer">
+            <p>
+              I offer website design and development, UI/UX design,
+              creative branding, interactive animations, and website
+              optimization tailored to your business goals.
+            </p>
+          </div>
+        </div>
+
+        <div class="fp-faq-item active fp-faq-reveal">
+          <button class="fp-faq-question" aria-expanded="true">
+            <span>How does your creative process work?</span>
+            <span class="fp-faq-icon">+</span>
+          </button>
+          <div class="fp-faq-answer">
+            <p>
+              Every project starts with understanding your goals,
+              followed by planning, design, development, testing,
+              and final delivery to ensure a smooth experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="fp-faq-item fp-faq-reveal">
+          <button class="fp-faq-question" aria-expanded="false">
+            <span>How long does it take to complete a project?</span>
+            <span class="fp-faq-icon">+</span>
+          </button>
+          <div class="fp-faq-answer">
+            <p>
+              Timelines depend on the project scope. A simple website
+              may take one to two weeks, while larger custom projects
+              can require several weeks.
+            </p>
+          </div>
+        </div>
+
+        <div class="fp-faq-item fp-faq-reveal">
+          <button class="fp-faq-question" aria-expanded="false">
+            <span>Can you create a website based on my ideas?</span>
+            <span class="fp-faq-icon">+</span>
+          </button>
+          <div class="fp-faq-answer">
+            <p>
+              Absolutely. Share your ideas, preferred style, and
+              requirements, and I will help turn your vision into
+              a responsive and engaging digital experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="fp-faq-item fp-faq-reveal">
+          <button class="fp-faq-question" aria-expanded="false">
+            <span>Will my website work on mobile devices?</span>
+            <span class="fp-faq-icon">+</span>
+          </button>
+          <div class="fp-faq-answer">
+            <p>
+              Yes. Every website is designed to adapt to mobile phones,
+              tablets, laptops, and desktops for a consistent user
+              experience across screen sizes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================
+     STACKLY FREELANCER FOOTER
+========================================= -->
+<footer class="stackly-footer" id="footer">
+
+  <div class="footer-container">
+
+    <!-- NEWSLETTER -->
+    <div class="footer-newsletter">
+
+      <div class="footer-newsletter-heading">
+        <span class="footer-eyebrow">STAY INSPIRED. STAY CREATIVE.</span>
+        <h2>Bring Better Ideas<br>To Life.</h2>
+      </div>
+
+      <div class="footer-newsletter-form">
+        <p>
+          Get creative insights, portfolio updates, and digital design
+          inspiration delivered to your inbox.
+        </p>
+
+        <form id="footerSubscribeForm" novalidate>
+          <div class="footer-form-row">
+            <div class="footer-email-field">
+              <input
+                type="email"
+                id="footerEmail"
+                name="email"
+                placeholder="Your email address"
+                aria-label="Your email address"
+                aria-describedby="footerEmailError"
+                autocomplete="email"
+                required
+              >
+              <span
+                class="footer-form-error"
+                id="footerEmailError"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <!-- FOOTER MAIN CONTENT -->
+    <div class="footer-main">
+
+      <!-- BRAND -->
+      <div class="footer-brand-column">
+
+        <a href="index.html" class="footer-logo" aria-label="Stackly Home">
+          <img src="assets/yellow-logo.webp" alt="Stackly">
+        </a>
+
+        <p class="footer-brand-description">
+          Independent creativity. Thoughtful design. Powerful digital
+          experiences built to bring your ideas to life.
+        </p>
+
+        <!-- NORMAL SOCIAL ICONS -->
+        <div class="footer-socials" aria-label="Social media">
+
+          <a href="404.html" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+
+          <a href="404.html" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a href="404.html" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+
+          <a href="404.html" aria-label="X">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-links-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="footer-links-column">
+        <h3>My Services</h3>
+        <ul>
+          <li><a href="404.html">Web Development</a></li>
+          <li><a href="404.html">UI/UX Design</a></li>
+          <li><a href="404.html">Portfolio Websites</a></li>
+          <li><a href="404.html">Responsive Design</a></li>
+          <li><a href="404.html">Creative Solutions</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="footer-contact-column">
+        <h3>Let's Connect</h3>
+
+        <p class="footer-contact-intro">
+          Have a project in mind? Let's create something meaningful together.
+        </p>
+
+        <a class="footer-contact-item" href="404.html">
+          <span class="material-symbols-outlined" aria-hidden="true">
+            location_on
+          </span>
+          <span>Salem Tamilnadu </span>
+        </a>
+
+        <a class="footer-contact-item" href="404.html">
+          <span class="material-symbols-outlined" aria-hidden="true">
+            mail
+          </span>
+          <span>help@stackly.com</span>
+        </a>
+
+        <a class="footer-contact-item" href="404.html">
+          <span class="material-symbols-outlined" aria-hidden="true">
+            call
+          </span>
+          <span>+91 9652891224</span>
+        </a>
+
+        <a href="404.html" class="footer-contact-cta">
+          Discuss Your Project
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-divider footer-bottom-divider"></div>
+
+    <!-- COPYRIGHT AND LEGAL LINKS -->
+    <div class="footer-bottom">
+
+    <p class="footer-copyright">
+  <span class="material-symbols-outlined footer-copyright-icon"
+        aria-hidden="true">copyright</span>
+  <span id="footerYear"></span> Stackly. All Rights Reserved.
+</p>
+      <div class="footer-legal-links">
+        <a href="404.html">Privacy Policy</a>
+        <a href="404.html">Terms &amp; Conditions</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>

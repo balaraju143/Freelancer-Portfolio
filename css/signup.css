@@ -1,0 +1,610 @@
+
+/* ==========================================
+   STACKLY FREELANCER SIGNUP CARD
+========================================== */
+
+.fp-signup-section,
+.fp-signup-section * {
+  box-sizing: border-box;
+}
+
+.fp-signup-section {
+  --signup-lime: #c9ff3b;
+
+  width: 100%;
+  padding: 122px 20px 65px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 15% 30%, #193526 0%, transparent 45%),
+    linear-gradient(135deg, #080d0a, #101b14 55%, #080d0a);
+  color: #f6f8f3;
+}
+
+.fp-signup-card {
+  display: grid;
+  grid-template-columns: 1fr 0.92fr;
+  width: 100%;
+  max-width: 1120px;
+  min-height: 590px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(201, 255, 59, 0.15);
+  border-radius: 20px;
+  background: #0d1510;
+  box-shadow: 0 25px 75px rgba(0, 0, 0, 0.32);
+}
+
+/* LEFT IMAGE PANEL */
+
+.fp-signup-visual {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 38px;
+  overflow: hidden;
+  background: #12251b;
+}
+
+.fp-signup-bg {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.fp-signup-overlay {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 12, 7, 0.63),
+      rgba(5, 12, 7, 0.4) 40%,
+      rgba(5, 12, 7, 0.94)
+    ),
+    linear-gradient(125deg, rgba(8, 20, 12, 0.65), rgba(36, 70, 39, 0.38));
+}
+
+.fp-signup-brand {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  color: #fff;
+}
+
+.fp-signup-brand > span:last-child {
+  color: var(--signup-lime);
+}
+
+.fp-signup-brand-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--signup-lime);
+  box-shadow: 0 0 15px rgba(201, 255, 59, 0.5);
+}
+
+.fp-signup-intro {
+  max-width: 420px;
+  margin: auto 0;
+  padding: 50px 0 40px;
+}
+
+.fp-signup-kicker {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--signup-lime);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.fp-signup-intro h1 {
+  margin: 0 0 18px;
+  color: #fff;
+  font-size: clamp(31px, 3.1vw, 43px);
+  line-height: 1.16;
+  letter-spacing: -1.4px;
+  font-weight: 750;
+}
+
+.fp-signup-intro h1 span {
+  color: var(--signup-lime);
+}
+
+.fp-signup-intro p {
+  max-width: 365px;
+  margin: 0;
+  color: #e0e7df;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.fp-signup-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.fp-signup-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.fp-signup-stats strong {
+  color: var(--signup-lime);
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.fp-signup-stats span {
+  color: #e0e7df;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* RIGHT FORM PANEL */
+
+.fp-signup-form-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 25px 36px;
+  background: #f8faf7;
+  color: #142018;
+}
+
+.fp-signup-form-inner {
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+.fp-signup-heading {
+  margin-bottom: 17px;
+}
+
+.fp-signup-eyebrow {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #466a36;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.fp-signup-heading h2 {
+  margin: 0 0 7px;
+  color: #142018;
+  font-size: 29px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  font-weight: 750;
+}
+
+.fp-signup-heading h2 span {
+  color: #507b2e;
+}
+
+.fp-signup-heading p {
+  margin: 0;
+  color: #667269;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* FORM FIELDS */
+
+.fp-signup-field {
+  min-width: 0;
+  margin-bottom: 12px;
+}
+
+.fp-signup-field > label {
+  display: block;
+  margin-bottom: 5px;
+  color: #27342b;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 750;
+}
+
+.fp-signup-role-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.fp-signup-role-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 0;
+  min-height: 38px;
+  padding: 7px;
+  border: 1px solid #dce4db;
+  border-radius: 7px;
+  background: #fff;
+  color: #38453b;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.fp-signup-role-btn .material-symbols-outlined {
+  font-size: 18px;
+}
+
+.fp-signup-role-btn:hover {
+  border-color: #9bb97c;
+}
+
+.fp-signup-role-btn.active {
+  border-color: #6e9b46;
+  background: #eaf4df;
+  color: #31551d;
+  box-shadow: 0 0 0 2px rgba(110, 155, 70, 0.08);
+}
+
+/* INPUTS */
+
+.fp-signup-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  min-height: 39px;
+  padding: 0 11px;
+  border: 1px solid #dce3dc;
+  border-radius: 7px;
+  background: #fff;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.fp-signup-input-wrap:focus-within {
+  border-color: #6e9b46;
+  box-shadow: 0 0 0 3px rgba(110, 155, 70, 0.12);
+}
+
+.fp-signup-input-wrap.fp-invalid {
+  border-color: #d74747;
+  box-shadow: 0 0 0 2px rgba(215, 71, 71, 0.07);
+}
+
+.fp-signup-input-icon {
+  flex-shrink: 0;
+  color: #7d8a7e;
+  font-size: 18px;
+}
+
+.fp-signup-input-wrap input {
+  width: 100%;
+  min-width: 0;
+  height: 37px;
+  padding: 0;
+  outline: none;
+  border: 0;
+  background: transparent;
+  color: #18241b;
+  font-family: inherit;
+  font-size: 11px;
+}
+
+.fp-signup-input-wrap input::placeholder {
+  color: #89928a;
+  opacity: 1;
+}
+
+.fp-signup-password-toggle {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 27px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #7d8a7e;
+  cursor: pointer;
+}
+
+.fp-signup-password-toggle .material-symbols-outlined {
+  font-size: 18px;
+}
+
+.fp-signup-password-toggle:hover {
+  color: #31551d;
+}
+
+/* VALIDATION MESSAGES */
+
+.fp-signup-error {
+  display: none;
+  margin-top: 4px;
+  color: #c52e35;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.fp-signup-error.show {
+  display: block;
+}
+
+.fp-signup-field.has-error > label {
+  color: #b92b32;
+}
+
+.fp-signup-field.has-error .fp-signup-input-wrap {
+  border-color: #d74747;
+}
+
+/* GENERAL MESSAGE */
+
+.fp-signup-message {
+  display: none;
+  margin: 0 0 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.fp-signup-message.show {
+  display: block;
+}
+
+.fp-signup-message.error {
+  border: 1px solid #f0caca;
+  background: #fff0f0;
+  color: #b92b32;
+}
+
+.fp-signup-message.success {
+  border: 1px solid #cce2b9;
+  background: #edf7e5;
+  color: #31551d;
+}
+
+/* CREATE ACCOUNT BUTTON */
+
+.fp-signup-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 41px;
+  padding: 10px 15px;
+  border: 1px solid var(--signup-lime);
+  border-radius: 7px;
+  background: var(--signup-lime);
+  color: #15200e;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s, transform 0.25s;
+}
+
+.fp-signup-submit .material-symbols-outlined {
+  font-size: 17px;
+  transition: transform 0.25s;
+}
+
+.fp-signup-submit:hover {
+  background: #b8ee2c;
+  transform: translateY(-2px);
+}
+
+.fp-signup-submit:hover .material-symbols-outlined {
+  transform: translateX(3px);
+}
+
+.fp-signup-submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
+
+.fp-signup-login-link {
+  margin: 15px 0 0;
+  color: #69756a;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.fp-signup-login-link a {
+  color: #47742d;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.fp-signup-login-link a:hover {
+  text-decoration: underline;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  .fp-signup-section {
+    padding: 32px 18px 50px;
+  }
+
+  .fp-signup-card {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .fp-signup-visual {
+    padding: 28px;
+  }
+
+  .fp-signup-form-panel {
+    padding: 24px 23px;
+  }
+
+  .fp-signup-intro h1 {
+    font-size: 31px;
+  }
+
+  .fp-signup-stats {
+    gap: 8px;
+  }
+
+  .fp-signup-stats strong {
+    font-size: 18px;
+  }
+
+  .fp-signup-stats span {
+    font-size: 9px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .fp-signup-section {
+    padding: 94px 15px 40px;
+  }
+
+  .fp-signup-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    min-height: 0;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+
+  .fp-signup-visual {
+    min-height: 270px;
+    padding: 24px 22px;
+  }
+
+  .fp-signup-intro {
+    margin: 30px 0;
+    padding: 0;
+    text-align: center;
+    align-self: center;
+  }
+
+  .fp-signup-kicker {
+    margin-bottom: 12px;
+    font-size: 10px;
+  }
+
+  .fp-signup-intro h1 {
+    margin-bottom: 12px;
+    font-size: clamp(27px, 7vw, 34px);
+    letter-spacing: -0.8px;
+  }
+
+  .fp-signup-intro p {
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 11px;
+    line-height: 1.8;
+  }
+
+  .fp-signup-stats {
+    gap: 8px;
+    padding-top: 17px;
+    text-align: center;
+  }
+
+  .fp-signup-stats div {
+    align-items: center;
+  }
+
+  .fp-signup-stats strong {
+    font-size: 18px;
+  }
+
+  .fp-signup-stats span {
+    font-size: 9px;
+  }
+
+  .fp-signup-form-panel {
+    width: 100%;
+    padding: 30px 23px;
+  }
+
+  .fp-signup-form-inner {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  .fp-signup-heading {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .fp-signup-heading h2 {
+    font-size: 28px;
+  }
+
+  .fp-signup-heading p {
+    font-size: 11px;
+  }
+
+  .fp-signup-field {
+    margin-bottom: 13px;
+  }
+
+  .fp-signup-input-wrap {
+    min-height: 42px;
+  }
+
+  .fp-signup-input-wrap input {
+    height: 40px;
+    font-size: 11px;
+  }
+
+  .fp-signup-submit {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 360px) {
+  .fp-signup-section {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .fp-signup-visual {
+    padding: 21px 16px;
+  }
+
+  .fp-signup-form-panel {
+    padding: 25px 16px;
+  }
+
+  .fp-signup-role-options {
+    gap: 7px;
+  }
+
+  .fp-signup-role-btn {
+    gap: 5px;
+    padding: 7px 5px;
+    font-size: 10px;
+  }
+}

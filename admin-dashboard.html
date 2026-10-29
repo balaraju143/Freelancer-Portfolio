@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080d0a" />
+  <title>Admin Dashboard | Stackly Creative</title>
+
+  <!-- Reuse shared dashboard styles -->
+  <link rel="stylesheet" href="css/client-dashboard.css" />
+  <link rel="stylesheet" href="css/admin-dashboard.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet" />
+</head>
+
+<body>
+<div class="cd-app ad-app">
+
+  <div class="cd-sidebar-overlay" id="adSidebarOverlay"></div>
+
+  <!-- ADMIN SIDEBAR -->
+  <aside class="cd-sidebar ad-sidebar" id="adSidebar">
+
+    <a href="#overview" class="cd-brand" data-admin-view="overview" aria-label="Stackly Admin Home">
+      <img src="assets/yellow-logo.webp" alt="Stackly" class="cd-brand-image" />
+    </a>
+
+    <div class="cd-user-card">
+      <div class="cd-avatar" data-admin-initial>A</div>
+      <div class="cd-user-info">
+        <strong data-admin-email>Admin Workspace</strong>
+        <span data-admin-email-full>Welcome to Stackly</span>
+        <small>ADMIN ACCOUNT</small>
+      </div>
+    </div>
+
+    <div class="cd-sidebar-label">ADMIN CONSOLE</div>
+
+    <nav class="cd-navigation" aria-label="Admin dashboard navigation">
+      <a href="#overview" class="cd-nav-link active" data-admin-view="overview">
+        <span class="material-symbols-outlined">space_dashboard</span>
+        <span>Overview</span>
+      </a>
+
+      <a href="#projects" class="cd-nav-link" data-admin-view="projects">
+        <span class="material-symbols-outlined">folder_managed</span>
+        <span>Projects Management</span>
+        <small class="cd-nav-count">04</small>
+      </a>
+
+      <a href="#portfolio" class="cd-nav-link" data-admin-view="portfolio">
+        <span class="material-symbols-outlined">design_services</span>
+        <span>Portfolio Management</span>
+      </a>
+
+      <a href="#clients" class="cd-nav-link" data-admin-view="clients">
+        <span class="material-symbols-outlined">group</span>
+        <span>Client Accounts</span>
+        <small class="cd-nav-count">08</small>
+      </a>
+
+      <a href="#messages" class="cd-nav-link" data-admin-view="messages">
+        <span class="material-symbols-outlined">forum</span>
+        <span>Messages</span>
+        <small class="cd-nav-count">02</small>
+      </a>
+
+      <a href="#reports" class="cd-nav-link" data-admin-view="reports">
+        <span class="material-symbols-outlined">analytics</span>
+        <span>Reports & Insights</span>
+      </a>
+    </nav>
+
+    <div class="cd-sidebar-bottom">
+      <div class="cd-help-card">
+        <span class="material-symbols-outlined">admin_panel_settings</span>
+        <strong>Admin Workspace</strong>
+        <p>Manage creative projects, client activity, and portfolio content.</p>
+        <a href="404.html">System Settings</a>
+      </div>
+
+      <a href="login.html" class="cd-logout-link">
+        <span class="material-symbols-outlined">logout</span>
+        <span>Logout</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="cd-main ad-main">
+
+    <header class="cd-header ad-header">
+      <div class="cd-header-title">
+        <button
+          class="cd-menu-toggle"
+          id="adMenuToggle"
+          type="button"
+          aria-label="Open admin menu"
+          aria-expanded="false"
+        >
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+
+        <div>
+          <h1 id="adPageTitle">Admin Overview</h1>
+          <p id="adPageSubtitle">Manage your creative workspace.</p>
+        </div>
+      </div>
+
+      <div class="cd-header-actions">
+        <button class="cd-search-button" type="button" id="adSearchButton" aria-label="Search admin workspace">
+          <span class="material-symbols-outlined">search</span>
+          <span>Search admin workspace</span>
+        </button>
+
+        <button class="cd-icon-button" type="button" id="adNotificationsButton" aria-label="Notifications">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="cd-notification-dot"></span>
+        </button>
+
+        <button class="cd-header-avatar" type="button" id="adProfileButton" data-admin-initial aria-label="Open admin profile">A</button>
+      </div>
+    </header>
+
+    <div class="cd-content ad-content" id="adContent">
+
+      <!-- OVERVIEW -->
+      <section class="cd-view active" data-admin-page="overview">
+
+        <div class="ad-hero">
+          <div class="ad-hero-copy">
+            <span class="cd-overline">STACKLY CONTROL CENTER</span>
+            <h2>Creative work.<br /><span>Managed with clarity.</span></h2>
+            <p>
+              Review project activity, manage client relationships, and keep
+              your creative services organized from one workspace.
+            </p>
+          </div>
+
+          <div class="ad-hero-visual">
+            <span class="material-symbols-outlined">query_stats</span>
+            <div class="ad-hero-orbit orbit-one"></div>
+            <div class="ad-hero-orbit orbit-two"></div>
+            <span class="ad-hero-caption">ADMIN / 01</span>
+          </div>
+        </div>
+
+        <div class="ad-section-heading">
+          <div>
+            <span class="cd-overline">WORKSPACE PERFORMANCE</span>
+            <h2>Administration Overview</h2>
+            <p>Sample summary data for your admin dashboard.</p>
+          </div>
+          <a href="#reports" class="cd-outline-button" data-admin-view="reports">View Insights</a>
+        </div>
+
+        <div class="ad-metrics-grid">
+          <article class="ad-metric-card">
+            <div class="ad-metric-icon"><span class="material-symbols-outlined">folder_managed</span></div>
+            <span class="ad-metric-label">TOTAL PROJECTS</span>
+            <strong>24</strong>
+            <p>Across creative services</p>
+            <div class="ad-metric-foot"><span class="ad-dot green-dot"></span>Project workspace</div>
+          </article>
+
+          <article class="ad-metric-card">
+            <div class="ad-metric-icon"><span class="material-symbols-outlined">groups</span></div>
+            <span class="ad-metric-label">CLIENT ACCOUNTS</span>
+            <strong>08</strong>
+            <p>Registered demo accounts</p>
+            <div class="ad-metric-foot"><span class="ad-dot green-dot"></span>Client management</div>
+          </article>
+
+          <article class="ad-metric-card">
+            <div class="ad-metric-icon"><span class="material-symbols-outlined">pending_actions</span></div>
+            <span class="ad-metric-label">IN PROGRESS</span>
+            <strong>06</strong>
+            <p>Projects being developed</p>
+            <div class="ad-metric-foot"><span class="ad-dot lime-dot"></span>Active workload</div>
+          </article>
+
+          <article class="ad-metric-card">
+            <div class="ad-metric-icon"><span class="material-symbols-outlined">task_alt</span></div>
+            <span class="ad-metric-label">COMPLETED</span>
+            <strong>18</strong>
+            <p>Milestones marked complete</p>
+            <div class="ad-metric-foot"><span class="ad-dot green-dot"></span>Delivery overview</div>
+          </article>
+        </div>
+
+        <div class="ad-overview-layout">
+
+          <section class="cd-panel ad-activity-panel">
+            <div class="cd-panel-heading">
+              <div>
+                <h3>Project Activity</h3>
+                <p>Current work across the creative pipeline.</p>
+              </div>
+              <a href="#projects" class="cd-text-link" data-admin-view="projects">Manage Projects</a>
+            </div>
+
+            <div class="ad-activity-list">
+              <article class="ad-activity-row">
+                <div class="ad-activity-icon"><span class="material-symbols-outlined">web</span></div>
+                <div class="ad-activity-info">
+                  <strong>Portfolio Website</strong>
+                  <span>Web Design · PRJ-001</span>
+                  <div class="ad-progress-track"><span style="width:72%"></span></div>
+                </div>
+                <div class="ad-activity-status">
+                  <strong>72%</strong>
+                  <span class="cd-status status-progress">In Progress</span>
+                </div>
+              </article>
+
+              <article class="ad-activity-row">
+                <div class="ad-activity-icon"><span class="material-symbols-outlined">devices</span></div>
+                <div class="ad-activity-info">
+                  <strong>Landing Page Experience</strong>
+                  <span>Development · PRJ-002</span>
+                  <div class="ad-progress-track"><span style="width:88%"></span></div>
+                </div>
+                <div class="ad-activity-status">
+                  <strong>88%</strong>
+                  <span class="cd-status status-review">In Review</span>
+                </div>
+              </article>
+
+              <article class="ad-activity-row">
+                <div class="ad-activity-icon"><span class="material-symbols-outlined">palette</span></div>
+                <div class="ad-activity-info">
+                  <strong>Brand Identity Concept</strong>
+                  <span>Visual Design · PRJ-003</span>
+                  <div class="ad-progress-track"><span style="width:100%"></span></div>
+                </div>
+                <div class="ad-activity-status">
+                  <strong>100%</strong>
+                  <span class="cd-status status-complete">Completed</span>
+                </div>
+              </article>
+
+              <article class="ad-activity-row">
+                <div class="ad-activity-icon"><span class="material-symbols-outlined">auto_awesome</span></div>
+                <div class="ad-activity-info">
+                  <strong>Interactive Web Concept</strong>
+                  <span>Creative Design · PRJ-004</span>
+                  <div class="ad-progress-track"><span style="width:35%"></span></div>
+                </div>
+                <div class="ad-activity-status">
+                  <strong>35%</strong>
+                  <span class="cd-status status-planning">Planning</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="cd-panel ad-quick-panel">
+            <div class="cd-panel-heading">
+              <div>
+                <h3>Admin Shortcuts</h3>
+                <p>Move directly to a workspace.</p>
+              </div>
+            </div>
+
+            <a href="#projects" class="ad-shortcut" data-admin-view="projects">
+              <span class="ad-shortcut-icon"><span class="material-symbols-outlined">folder_managed</span></span>
+              <span><strong>Manage Projects</strong><small>Review status and work items</small></span>
+              <span class="material-symbols-outlined ad-shortcut-end">chevron_right</span>
+            </a>
+
+            <a href="#portfolio" class="ad-shortcut" data-admin-view="portfolio">
+              <span class="ad-shortcut-icon"><span class="material-symbols-outlined">design_services</span></span>
+              <span><strong>Portfolio Content</strong><small>Review creative categories</small></span>
+              <span class="material-symbols-outlined ad-shortcut-end">chevron_right</span>
+            </a>
+
+            <a href="#clients" class="ad-shortcut" data-admin-view="clients">
+              <span class="ad-shortcut-icon"><span class="material-symbols-outlined">group</span></span>
+              <span><strong>Client Accounts</strong><small>Review demo client records</small></span>
+              <span class="material-symbols-outlined ad-shortcut-end">chevron_right</span>
+            </a>
+
+            <a href="#reports" class="ad-shortcut" data-admin-view="reports">
+              <span class="ad-shortcut-icon"><span class="material-symbols-outlined">analytics</span></span>
+              <span><strong>Reports & Insights</strong><small>Review sample metrics</small></span>
+              <span class="material-symbols-outlined ad-shortcut-end">chevron_right</span>
+            </a>
+          </section>
+
+        </div>
+
+        <section class="cd-panel ad-bottom-activity">
+          <div class="cd-panel-heading">
+            <div>
+              <h3>Latest Workspace Updates</h3>
+              <p>Sample activity for your dashboard preview.</p>
+            </div>
+            <a href="#messages" class="cd-text-link" data-admin-view="messages">View Messages</a>
+          </div>
+
+          <div class="ad-update-grid">
+            <article class="ad-update-item">
+              <span class="material-symbols-outlined">mark_email_unread</span>
+              <div><strong>Client communication</strong><p>Review recent project discussions.</p></div>
+              <a href="#messages" data-admin-view="messages">Open</a>
+            </article>
+            <article class="ad-update-item">
+              <span class="material-symbols-outlined">collections</span>
+              <div><strong>Portfolio review</strong><p>Check creative categories and concepts.</p></div>
+              <a href="#portfolio" data-admin-view="portfolio">Open</a>
+            </article>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- PROJECT MANAGEMENT -->
+      <section class="cd-view" data-admin-page="projects">
+        <div class="ad-page-banner">
+          <span class="cd-overline">PROJECT OPERATIONS</span>
+          <h2>Projects Management</h2>
+          <p>Review project delivery, progress, and creative workload.</p>
+        </div>
+
+        <div class="ad-project-kpis">
+          <article><span>All Projects</span><strong>24</strong><small>Across all categories</small></article>
+          <article><span>In Progress</span><strong>06</strong><small>Active work items</small></article>
+          <article><span>Awaiting Review</span><strong>03</strong><small>Ready for review</small></article>
+          <article><span>Completed</span><strong>18</strong><small>Marked complete</small></article>
+        </div>
+
+        <section class="cd-panel ad-admin-panel">
+          <div class="cd-panel-heading">
+            <div><h3>Project Register</h3><p>Sample project records for the admin interface.</p></div>
+            <a href="404.html" class="cd-primary-button">Add New Project</a>
+          </div>
+
+          <div class="cd-table-wrap">
+            <table class="cd-project-table">
+              <thead><tr><th>Project</th><th>Client</th><th>Category</th><th>Progress</th><th>Status</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Portfolio Website</strong><span>PRJ-001</span></td><td>Client A</td><td>Web Design</td><td>72%</td><td><span class="cd-status status-progress">In Progress</span></td><td><a href="404.html" class="cd-small-link">Details</a></td></tr>
+                <tr><td><strong>Landing Page Experience</strong><span>PRJ-002</span></td><td>Client B</td><td>Development</td><td>88%</td><td><span class="cd-status status-review">In Review</span></td><td><a href="404.html" class="cd-small-link">Details</a></td></tr>
+                <tr><td><strong>Brand Identity Concept</strong><span>PRJ-003</span></td><td>Client C</td><td>Brand Design</td><td>100%</td><td><span class="cd-status status-complete">Completed</span></td><td><a href="404.html" class="cd-small-link">Details</a></td></tr>
+                <tr><td><strong>Interactive Web Concept</strong><span>PRJ-004</span></td><td>Client D</td><td>Interaction</td><td>35%</td><td><span class="cd-status status-planning">Planning</span></td><td><a href="404.html" class="cd-small-link">Details</a></td></tr>
+                <tr><td><strong>Digital Brand Refresh</strong><span>PRJ-005</span></td><td>Client E</td><td>Brand Design</td><td>54%</td><td><span class="cd-status status-progress">In Progress</span></td><td><a href="404.html" class="cd-small-link">Details</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="cd-panel ad-management-note">
+          <span class="material-symbols-outlined">info</span>
+          <div><strong>Project management workspace</strong><p>Project records are demonstration content. Add, edit, and delete operations can be connected to your project API.</p></div>
+        </section>
+      </section>
+
+      <!-- PORTFOLIO MANAGEMENT -->
+      <section class="cd-view" data-admin-page="portfolio">
+        <div class="ad-page-banner">
+          <span class="cd-overline">CREATIVE CONTENT</span>
+          <h2>Portfolio Management</h2>
+          <p>Organize portfolio categories and review creative presentation concepts.</p>
+        </div>
+
+        <div class="ad-portfolio-feature">
+          <div><span class="cd-overline">CONTENT OVERVIEW</span><h3>Every project tells a story.</h3><p>Keep the creative work organized, consistent, and ready to showcase.</p></div>
+          <a href="404.html" class="cd-primary-button">Add Portfolio Item</a>
+        </div>
+
+        <div class="ad-admin-portfolio-grid">
+          <article class="ad-admin-portfolio-card">
+            <div class="ad-admin-art art-one"><span class="material-symbols-outlined">language</span><small>01 / DIGITAL</small></div>
+            <div class="ad-admin-portfolio-info"><span>WEB DESIGN</span><h3>Digital Experiences</h3><p>Responsive website concepts and landing page designs.</p><div class="ad-card-meta"><span>08 items</span><span class="cd-status status-complete">Published</span></div><a href="404.html" class="cd-outline-button">Manage Content</a></div>
+          </article>
+          <article class="ad-admin-portfolio-card">
+            <div class="ad-admin-art art-two"><span class="material-symbols-outlined">palette</span><small>02 / IDENTITY</small></div>
+            <div class="ad-admin-portfolio-info"><span>BRAND DESIGN</span><h3>Visual Identity</h3><p>Brand systems, visual guidelines, and design concepts.</p><div class="ad-card-meta"><span>05 items</span><span class="cd-status status-complete">Published</span></div><a href="404.html" class="cd-outline-button">Manage Content</a></div>
+          </article>
+          <article class="ad-admin-portfolio-card">
+            <div class="ad-admin-art art-three"><span class="material-symbols-outlined">animation</span><small>03 / INTERACTIVE</small></div>
+            <div class="ad-admin-portfolio-info"><span>MOTION DESIGN</span><h3>Motion & Interaction</h3><p>Micro-interactions and animated web experiences.</p><div class="ad-card-meta"><span>03 items</span><span class="cd-status status-review">In Review</span></div><a href="404.html" class="cd-outline-button">Manage Content</a></div>
+          </article>
+        </div>
+
+        <section class="cd-panel ad-management-note">
+          <span class="material-symbols-outlined">tips_and_updates</span>
+          <div><strong>Portfolio content controls</strong><p>Use these cards as the admin design. Connect publishing and editing actions to your content management API when ready.</p></div>
+        </section>
+      </section>
+
+      <!-- CLIENT ACCOUNTS -->
+      <section class="cd-view" data-admin-page="clients">
+        <div class="ad-page-banner">
+          <span class="cd-overline">RELATIONSHIP MANAGEMENT</span>
+          <h2>Client Accounts</h2>
+          <p>Review example client accounts and their associated project activity.</p>
+        </div>
+
+        <div class="ad-client-overview">
+          <article><span class="material-symbols-outlined">groups</span><span>Total Accounts</span><strong>08</strong></article>
+          <article><span class="material-symbols-outlined">work_history</span><span>With Projects</span><strong>06</strong></article>
+          <article><span class="material-symbols-outlined">mark_email_unread</span><span>Needs Follow-up</span><strong>02</strong></article>
+        </div>
+
+        <section class="cd-panel ad-admin-panel">
+          <div class="cd-panel-heading"><div><h3>Client Directory</h3><p>Example records for the admin dashboard preview.</p></div><a href="404.html" class="cd-primary-button">Add Client</a></div>
+          <div class="cd-table-wrap">
+            <table class="cd-project-table">
+              <thead><tr><th>Client</th><th>Account ID</th><th>Projects</th><th>Account Status</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Alex Morgan</strong><span>alex@example.com</span></td><td>CL-001</td><td>03</td><td><span class="cd-status status-complete">Active</span></td><td><a href="404.html" class="cd-small-link">View</a></td></tr>
+                <tr><td><strong>Jordan Lee</strong><span>jordan@example.com</span></td><td>CL-002</td><td>02</td><td><span class="cd-status status-complete">Active</span></td><td><a href="404.html" class="cd-small-link">View</a></td></tr>
+                <tr><td><strong>Taylor Brooks</strong><span>taylor@example.com</span></td><td>CL-003</td><td>01</td><td><span class="cd-status status-review">Review</span></td><td><a href="404.html" class="cd-small-link">View</a></td></tr>
+                <tr><td><strong>Casey Rivera</strong><span>casey@example.com</span></td><td>CL-004</td><td>02</td><td><span class="cd-status status-complete">Active</span></td><td><a href="404.html" class="cd-small-link">View</a></td></tr>
+                <tr><td><strong>Riley Parker</strong><span>riley@example.com</span></td><td>CL-005</td><td>01</td><td><span class="cd-status status-planning">Pending</span></td><td><a href="404.html" class="cd-small-link">View</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="cd-panel ad-management-note">
+          <span class="material-symbols-outlined">shield</span>
+          <div><strong>Client privacy</strong><p>These client names and emails are sample data. Real account information should be loaded from a secured backend with appropriate admin permissions.</p></div>
+        </section>
+      </section>
+
+      <!-- MESSAGES -->
+      <section class="cd-view" data-admin-page="messages">
+        <div class="ad-page-banner">
+          <span class="cd-overline">COMMUNICATION CENTER</span>
+          <h2>Messages & Requests</h2>
+          <p>Review example client communications and project enquiries.</p>
+        </div>
+
+        <div class="ad-message-kpis">
+          <article><span>All Messages</span><strong>12</strong><small>Sample records</small></article>
+          <article><span>Unread</span><strong>02</strong><small>Awaiting review</small></article>
+          <article><span>Project Enquiries</span><strong>05</strong><small>Creative requests</small></article>
+        </div>
+
+        <div class="ad-message-grid">
+          <section class="cd-panel">
+            <div class="cd-panel-heading"><div><h3>Recent Communications</h3><p>Example messages for the admin interface.</p></div></div>
+
+            <article class="ad-message-row">
+              <div class="ad-message-avatar">A</div>
+              <div><strong>Alex Morgan</strong><p>Request for a portfolio website project discussion.</p><small>Project enquiry · Sample message</small></div>
+              <a href="404.html" class="cd-small-link">Open</a>
+            </article>
+            <article class="ad-message-row">
+              <div class="ad-message-avatar">J</div>
+              <div><strong>Jordan Lee</strong><p>Feedback on the responsive landing page concept.</p><small>Project feedback · Sample message</small></div>
+              <a href="404.html" class="cd-small-link">Open</a>
+            </article>
+            <article class="ad-message-row">
+              <div class="ad-message-avatar">T</div>
+              <div><strong>Taylor Brooks</strong><p>Question about branding and visual identity services.</p><small>Service enquiry · Sample message</small></div>
+              <a href="404.html" class="cd-small-link">Open</a>
+            </article>
+          </section>
+
+          <section class="cd-panel ad-message-side">
+            <span class="material-symbols-outlined">mark_email_unread</span>
+            <h3>Keep communication moving.</h3>
+            <p>Respond to client requests, clarify project goals, and keep every creative collaboration organized.</p>
+            <a href="404.html" class="cd-primary-button">Open Message Center</a>
+          </section>
+        </div>
+      </section>
+
+      <!-- REPORTS -->
+      <section class="cd-view" data-admin-page="reports">
+        <div class="ad-page-banner">
+          <span class="cd-overline">DATA & PERFORMANCE</span>
+          <h2>Reports & Insights</h2>
+          <p>Review example project distribution, completion rates, and workspace metrics.</p>
+        </div>
+
+        <div class="ad-report-kpis">
+          <article><span>Completion Rate</span><strong>75%</strong><small>Illustrative sample metric</small></article>
+          <article><span>Active Projects</span><strong>06</strong><small>Current sample workload</small></article>
+          <article><span>Portfolio Categories</span><strong>03</strong><small>Creative content groups</small></article>
+          <article><span>Client Accounts</span><strong>08</strong><small>Sample account records</small></article>
+        </div>
+
+        <div class="ad-reports-grid">
+          <section class="cd-panel">
+            <div class="cd-panel-heading"><div><h3>Project Completion</h3><p>Illustrative status distribution.</p></div></div>
+            <div class="ad-bars">
+              <div class="ad-bar-row"><div><span>Completed</span><strong>75%</strong></div><div class="ad-bar-track"><span style="width:75%"></span></div></div>
+              <div class="ad-bar-row"><div><span>In Progress</span><strong>60%</strong></div><div class="ad-bar-track"><span style="width:60%"></span></div></div>
+              <div class="ad-bar-row"><div><span>In Review</span><strong>35%</strong></div><div class="ad-bar-track"><span style="width:35%"></span></div></div>
+              <div class="ad-bar-row"><div><span>Planning</span><strong>20%</strong></div><div class="ad-bar-track"><span style="width:20%"></span></div></div>
+            </div>
+          </section>
+
+          <section class="cd-panel ad-report-focus">
+            <span class="material-symbols-outlined">insights</span>
+            <span class="cd-overline">ADMIN INSIGHT</span>
+            <h3>Clarity creates momentum.</h3>
+            <p>Use project status, client activity, and portfolio content to identify what needs attention next.</p>
+            <a href="#projects" class="cd-outline-button" data-admin-view="projects">Review Project Status</a>
+          </section>
+        </div>
+
+        <section class="cd-panel ad-management-note">
+          <span class="material-symbols-outlined">info</span>
+          <div><strong>Sample reporting data</strong><p>The displayed figures and bar widths are illustrative only. Connect analytics to your actual database before using these reports for business decisions.</p></div>
+        </section>
+      </section>
+
+      <!-- ADMIN PROFILE -->
+      <section class="cd-view" data-admin-page="profile">
+        <div class="ad-page-banner">
+          <span class="cd-overline">ADMIN ACCOUNT</span>
+          <h2>Administrator Profile</h2>
+          <p>View the email identity used to enter the admin workspace.</p>
+        </div>
+
+        <section class="cd-panel ad-profile-card">
+          <div class="ad-profile-cover"></div>
+          <div class="ad-profile-body">
+            <div class="ad-profile-avatar" data-admin-initial>A</div>
+            <h3 data-admin-email>Admin Workspace</h3>
+            <p data-admin-email-full>Sign in to view your account</p>
+            <span class="ad-admin-badge">ADMIN ACCOUNT</span>
+
+            <div class="ad-profile-details">
+              <div><span>EMAIL ADDRESS</span><strong data-admin-email-full>Not available</strong></div>
+              <div><span>ACCOUNT ROLE</span><strong>Administrator</strong></div>
+              <div><span>WORKSPACE</span><strong>Stackly Creative</strong></div>
+            </div>
+
+            <p class="ad-profile-note">Account identity is displayed from the email saved during login. For production, verify administrator permissions on your backend.</p>
+            <a href="404.html" class="cd-primary-button">Manage Account</a>
+          </div>
+        </section>
+      </section>
+
+    </div>
+
+    <footer class="cd-footer ad-footer">
+      <span>© <span id="adCurrentYear"></span> Stackly Creative</span>
+      <span>Administrator Workspace</span>
+    </footer>
+  </main>
+</div>
+
+<script src="js/admin-dashboard.js"></script>
+</body>
+</html>

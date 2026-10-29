@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Freelancer Portfolio</title>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="stackly-header" id="stacklyHeader">
+    <div class="header-container">
+
+      <!-- LOGO -->
+      <a href="index.html" class="stackly-logo" aria-label="Stackly Home">
+        <img src="assets/yellow-logo.webp" alt="Stackly Logo">
+      </a>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="desktop-navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- RIGHT ACTIONS -->
+      <div class="header-actions">
+        <a href="login.html" class="header-login">Login</a>
+        <a href="signup.html" class="header-signup">Sign Up</a>
+      </div>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileNavigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- MOBILE FULL-VIEWPORT NAVIGATION -->
+    <nav
+      class="mobile-navigation"
+      id="mobileNavigation"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+      inert
+    >
+      <div class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link active">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="blog.html" class="mobile-nav-link">Blog</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+        <div class="mobile-auth-links">
+          <a href="login.html" class="mobile-login">Login</a>
+          <a href="signup.html" class="mobile-signup">Sign Up</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-footer">
+        <span>CREATIVE MINDS. DIGITAL EXPERIENCES.</span>
+      </div>
+    </nav>
+
+  </header>
+
+
+<!-- FREELANCER PORTFOLIO HERO -->
+<section class="freelancer-hero" id="home">
+
+  <!-- BACKGROUND VIDEO -->
+  <div class="hero-video-wrap">
+    <video
+      class="hero-background-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="images/freelancer-hero-poster.webp"
+    >
+      <source src="videos/hero-video (2).mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
+  </div>
+
+  <div class="freelancer-hero-inner">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-main-content">
+
+      <div class="hero-eyebrow">
+        <span class="hero-status-dot"></span>
+        AVAILABLE FOR SELECT PROJECTS
+      </div>
+
+      <h1 class="hero-title">
+        <span>Ideas Into</span>
+        <span class="hero-title-accent">Digital Experiences.</span>
+      </h1>
+
+      <div class="hero-divider"></div>
+
+      <div class="hero-bottom-content">
+
+        <div class="hero-intro">
+          <p>
+            I design and build modern websites that bring your vision
+            to life, connect with your audience, and help your business grow.
+          </p>
+
+          <a href="contact.html" class="hero-cta">
+            <span>Let's Work Together</span>
+          </a>
+        </div>
+
+        <div class="hero-social-proof">
+
+          <div class="hero-rating">
+            <strong>100%</strong>
+            <div class="hero-rating-details">
+              <div class="hero-stars" aria-label="Five-star rating">
+                ★★★★★
+              </div>
+              <span>Focus on quality & detail</span>
+            </div>
+          </div>
+
+          <div class="hero-client-row">
+            <img
+              src="assets/client-testi1.webp"
+              alt=""
+            >
+            <img
+              src="assets/client-testi2.webp"
+              alt=""
+            >
+            <img
+              src="assets/client-testi3.webp"
+              alt=""
+            >
+            <span class="hero-client-plus" aria-hidden="true">+</span>
+            <span class="hero-client-label">Let's build something great</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT PROJECT CARD -->
+    <aside class="hero-project-card">
+
+      <div class="hero-project-image">
+        <img
+          src="assets/team-work.webp"
+          alt="Website design project created for a client"
+        >
+        <span class="hero-project-tag">SELECTED WORK · 2026</span>
+      </div>
+
+      <div class="hero-project-footer">
+        <div class="hero-project-brand" aria-hidden="true">
+          <span>S</span>
+        </div>
+
+        <div class="hero-project-caption">
+          <span>DESIGN. DEVELOP.</span>
+          <strong>MAKE AN IMPACT.</strong>
+        </div>
+      </div>
+
+      <a
+        href="404.html"
+        class="hero-project-link"
+        aria-label="Explore portfolio projects"
+      ></a>
+
+    </aside>
+
+    <div class="hero-bottom-note">
+      <span>INDEPENDENT BY CHOICE.</span>
+      <span>CREATIVE BY NATURE.</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FREELANCER SERVICES MARQUEE -->
+<section class="freelancer-marquee" aria-label="Freelancer services">
+  <div class="freelancer-marquee-track">
+
+    <div class="freelancer-marquee-group">
+      <span>Web Development</span>
+      <span class="marquee-separator">-</span>
+      <span>Creative Design</span>
+      <span class="marquee-separator">-</span>
+      <span>UI/UX Design</span>
+      <span class="marquee-separator">-</span>
+      <span>Responsive Websites</span>
+      <span class="marquee-separator">-</span>
+      <span>Frontend Development</span>
+      <span class="marquee-separator">-</span>
+      <span>Digital Experiences</span>
+      <span class="marquee-separator">-</span>
+    </div>
+
+    <!-- Duplicate for seamless looping -->
+    <div class="freelancer-marquee-group" aria-hidden="true">
+      <span>Web Development</span>
+      <span class="marquee-separator">-</span>
+      <span>Creative Design</span>
+      <span class="marquee-separator">-</span>
+      <span>UI/UX Design</span>
+      <span class="marquee-separator">-</span>
+      <span>Responsive Websites</span>
+      <span class="marquee-separator">-</span>
+      <span>Frontend Development</span>
+      <span class="marquee-separator">-</span>
+      <span>Digital Experiences</span>
+      <span class="marquee-separator">-</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT ME SECTION -->
+<section class="freelancer-about" id="about">
+
+  <!-- Decorative elements -->
+  <div class="about-glow"></div>
+
+  <div class="about-orbit" aria-hidden="true">
+    <div class="orbit-ring"></div>
+    <div class="orbit-planet"></div>
+  </div>
+
+  <div class="about-chrome-shape" aria-hidden="true">
+    ✦
+  </div>
+
+  <div class="about-container">
+
+    <!-- LEFT: THREE IMAGE COLLAGE -->
+    <div class="about-visuals">
+
+      <!-- Tall image -->
+      <div class="about-image about-image-tall">
+        <img
+          src="assets/offiice-work.webp"
+          alt="Freelancer working on a laptop"
+          loading="lazy"
+        >
+      </div>
+
+      <!-- Top circular image -->
+      <div class="about-image about-image-top">
+        <img
+          src="assets/collabaration-work.webp"
+          alt="Creative professionals collaborating on a project"
+          loading="lazy"
+        >
+      </div>
+
+      <!-- Bottom circular image -->
+      <div class="about-image about-image-bottom">
+        <img
+          src="assets/team-1.webp"
+          alt="Developers celebrating a successful project"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+
+    <!-- RIGHT: ABOUT CONTENT -->
+    <div class="about-content">
+
+      <div class="about-eyebrow">
+        <span class="about-brand-mark">S</span>
+        <span>ABOUT US</span>
+      </div>
+
+      <h2 class="about-heading">
+        Building Digital
+        <span>Solutions That Work.</span>
+      </h2>
+
+      <p class="about-description">
+        I'm a passionate freelance web developer and designer, helping
+        businesses turn their ideas into modern, high-performing digital
+        experiences.
+      </p>
+
+      <ul class="about-benefits">
+        <li>
+          <span class="benefit-check">✓</span>
+          <span>Modern, responsive and user-friendly websites</span>
+        </li>
+        <li>
+          <span class="benefit-check">✓</span>
+          <span>Creative design with clear communication</span>
+        </li>
+        <li>
+          <span class="benefit-check">✓</span>
+          <span>On-time delivery and long-term support</span>
+        </li>
+      </ul>
+
+      <!-- Bottom cards -->
+      <div class="about-bottom-cards">
+
+        <!-- More About -->
+        <a href="404.html" class="about-more-card">
+        <span class="about-more-arrow material-symbols-outlined">
+          north_east
+         </span>
+          <span>More About</span>
+        </a>
+
+        <!-- Experience badge -->
+        <div class="about-experience-card">
+          <div class="experience-number">
+            <strong>5+</strong>
+            <span>Years of Experience</span>
+          </div>
+
+          <a
+            href="404.html"
+            class="about-video-card"
+            aria-label="View freelancer introduction video"
+          >
+            <img
+              src="assets/team-work.webp"
+              alt="Freelancer portfolio introduction video preview"
+              loading="lazy"
+            >
+            <span class="about-play-button" aria-hidden="true">
+              ▶
+            </span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY WORK WITH ME SECTION -->
+<section class="freelancer-why" id="why-me">
+
+  <div class="why-background-glow"></div>
+
+  <div class="why-container">
+
+    <!-- LEFT: OVERLAPPING IMAGES -->
+    <div class="why-visuals">
+
+      <div class="why-image why-image-main">
+        <img
+          src="assets/team2.webp"
+          alt="Freelancer developing a website in a creative workspace"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="why-image why-image-overlay">
+        <img
+          src="assets/team3.webp"
+          alt="Professionals discussing a digital project"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="why-image-caption">
+        <span class="why-caption-dot"></span>
+        INDEPENDENT THINKING. PERSONAL ATTENTION.
+      </div>
+
+    </div>
+
+    <!-- RIGHT: CONTENT -->
+    <div class="why-content">
+
+      <div class="why-eyebrow">
+        <span class="why-brand-mark">S</span>
+        <span>WHY WORK WITH STACKLY</span>
+      </div>
+
+      <h2 class="why-heading">
+        Creative Ideas.
+        <span>Thoughtful Development.</span>
+      </h2>
+
+      <p class="why-description">
+        Every project deserves a personal approach. I combine creative
+        problem-solving, modern development, and attention to detail to
+        build digital experiences that work beautifully.
+      </p>
+
+      <!-- PROCESS TIMELINE -->
+      <div class="why-process">
+
+        <article class="why-process-item">
+          <div class="why-step-number">01</div>
+
+          <div class="why-step-content">
+            <h3>Understand Your Vision</h3>
+            <p>
+              We discuss your goals, audience, and requirements before
+              choosing the right direction for your project.
+            </p>
+          </div>
+        </article>
+
+        <article class="why-process-item">
+          <div class="why-step-number">02</div>
+
+          <div class="why-step-content">
+            <h3>Design & Develop</h3>
+            <p>
+              I turn your ideas into responsive, user-friendly websites
+              with clean layouts, modern technology, and smooth interactions.
+            </p>
+          </div>
+        </article>
+
+        <article class="why-process-item">
+          <div class="why-step-number">03</div>
+
+          <div class="why-step-content">
+            <h3>Refine & Deliver</h3>
+            <p>
+              I test across screen sizes, refine the details, and prepare
+              your website for a reliable launch.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <a href="contact.html" class="why-contact-link">
+        <span>Discuss Your Project</span>
+        
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FREELANCER WORKFLOW SECTION -->
+<section class="freelancer-workflow" id="workflow">
+
+  <div class="workflow-container">
+
+    <!-- SECTION HEADING -->
+    <div class="workflow-header">
+      <div class="workflow-eyebrow">
+        <span class="workflow-brand-mark">S</span>
+        <span>HOW IT WORKS</span>
+      </div>
+
+      <h2 class="workflow-heading">
+        My Freelance Workflow for
+        <span>Building Better Websites</span>
+      </h2>
+
+      <p class="workflow-intro">
+        A clear, collaborative process that turns your ideas into
+        responsive, polished digital experiences.
+      </p>
+    </div>
+
+    <!-- WORKFLOW STEPS -->
+    <div class="workflow-steps">
+
+      <!-- STEP 1 -->
+      <article class="workflow-step">
+
+        <div class="workflow-image-wrap">
+          <div class="workflow-image">
+            <img
+              src="assets/working-image-1.webp"
+              alt="Planning a website project with a client"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <div class="workflow-number">01</div>
+
+        <div class="workflow-step-content">
+          <h3>Discover & Plan</h3>
+          <p>
+            We discuss your vision, audience, and project goals to create
+            a clear plan for your website.
+          </p>
+        </div>
+
+      </article>
+
+      <!-- STEP 2 -->
+      <article class="workflow-step">
+
+        <div class="workflow-image-wrap">
+          <div class="workflow-image">
+            <img
+              src="assets/working-image-2.webp"
+              alt="Designing and developing a responsive website"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <div class="workflow-number">02</div>
+
+        <div class="workflow-step-content">
+          <h3>Design & Develop</h3>
+          <p>
+            I bring the plan to life with thoughtful design, clean code,
+            responsive layouts, and smooth interactions.
+          </p>
+        </div>
+
+      </article>
+
+      <!-- STEP 3 -->
+      <article class="workflow-step">
+
+        <div class="workflow-image-wrap">
+          <div class="workflow-image">
+            <img
+              src="assets/working-image-3.webp"
+              alt="Reviewing a completed website before launch"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <div class="workflow-number">03</div>
+
+        <div class="workflow-step-content">
+          <h3>Test & Deliver</h3>
+          <p>
+            I check the details across devices, refine the experience,
+            and prepare your website for launch.
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- RECENT WORKS / PORTFOLIO -->
+<section class="freelancer-projects" id="recent-works">
+
+  <div class="projects-container">
+
+    <!-- SECTION HEADER -->
+    <header class="projects-header">
+      <div class="projects-eyebrow">
+        <span class="projects-brand-mark">S</span>
+        <span>RECENT WORKS</span>
+      </div>
+
+      <h2>
+        Projects That Turned Ideas Into
+        <span>Powerful Results</span>
+      </h2>
+
+      <p>
+        A showcase of creative ideas, thoughtful development, and
+        digital experiences built to make an impact.
+      </p>
+    </header>
+
+    <!-- STACKED PROJECT CARDS -->
+    <div class="projects-stack">
+
+      <!-- PROJECT 1 -->
+      <article class="project-card project-card-one">
+
+        <div class="project-copy">
+          <div class="project-icon">
+            <span class="material-symbols-outlined">language</span>
+          </div>
+
+          <span class="project-category">WEBSITE DESIGN</span>
+
+          <h3>Modern Website for Creative Agency</h3>
+
+          <p>
+            A visually engaging website with modern layouts, refined
+            typography, and responsive design for a creative brand.
+          </p>
+
+          <a href="404.html" class="project-link" aria-label="View creative agency project">
+            <span class="project-link-icon material-symbols-outlined">
+              north_east
+            </span>
+            <span>View Project</span>
+          </a>
+        </div>
+
+        <div class="project-image-wrap">
+          <img
+            src="assets/creative-agency.webp"
+            alt="Creative team collaborating on a website project"
+            loading="lazy"
+          >
+        </div>
+
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="project-card project-card-two">
+
+        <div class="project-copy">
+          <div class="project-icon">
+            <span class="material-symbols-outlined">devices</span>
+          </div>
+
+          <span class="project-category">WEB DEVELOPMENT</span>
+
+          <h3>Responsive Website for an E-Commerce Brand</h3>
+
+          <p>
+            A responsive shopping experience with clean product layouts,
+            intuitive navigation, and a seamless experience across devices.
+          </p>
+
+          <a href="404.html" class="project-link" aria-label="View e-commerce project">
+            <span class="project-link-icon material-symbols-outlined">
+              north_east
+            </span>
+            <span>View Project</span>
+          </a>
+        </div>
+
+        <div class="project-image-wrap">
+          <img
+            src="assets/project1.webp"
+            alt="Developer building an e-commerce website"
+            loading="lazy"
+          >
+        </div>
+
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="project-card project-card-three">
+
+        <div class="project-copy">
+          <div class="project-icon">
+            <span class="material-symbols-outlined">palette</span>
+          </div>
+
+          <span class="project-category">CREATIVE SOLUTIONS</span>
+
+          <h3>Digital Experience for a Tech Startup</h3>
+
+          <p>
+            An engaging digital experience combining interactive elements,
+            modern visuals, and purposeful user-focused design.
+          </p>
+
+          <a href="404.html" class="project-link" aria-label="View tech startup project">
+            <span class="project-link-icon material-symbols-outlined">
+              north_east
+            </span>
+            <span>View Project</span>
+          </a>
+        </div>
+
+        <div class="project-image-wrap">
+          <img
+            src="assets/project2.webp"
+            alt="Team reviewing a digital product concept"
+            loading="lazy"
+          >
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- STACKLY CREATIVE TEAM SECTION -->
+<section class="stackly-team" id="our-team">
+
+  <div class="team-container">
+
+    <!-- SECTION HEADER -->
+    <div class="team-header">
+
+      <div class="team-heading-block">
+        <div class="team-eyebrow">
+          <span class="team-brand-mark">S</span>
+          <span>OUR CREATIVE TEAM</span>
+        </div>
+
+        <h2 class="team-title">
+          Meet the Creative Minds
+          <span>Behind Stackly</span>
+        </h2>
+      </div>
+
+      <div class="team-intro">
+        <p>
+          Creative thinkers and passionate developers bringing ideas
+          to life through thoughtful design and modern technology.
+        </p>
+
+        <a href="404.html" class="team-explore-btn">
+          Explore More
+        </a>
+      </div>
+
+    </div>
+
+    <!-- TEAM CARDS -->
+    <div class="team-grid">
+
+      <!-- CARD 1 -->
+      <article class="team-card">
+
+        <div class="team-photo">
+          <img
+            src="assets/client-testi1.webp"
+            alt="Frontend developer"
+            loading="lazy"
+          >
+
+          <div class="team-socials" aria-label="Social media links">
+            <a href="404.html" aria-label="Facebook" title="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="X" title="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="Instagram" title="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <button
+            type="button"
+            class="team-social-toggle"
+            aria-label="Show social links for Alex Morgan"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">
+              share
+            </span>
+          </button>
+        </div>
+
+        <div class="team-info">
+          <h3>Alex Morgan</h3>
+          <p>Frontend Developer</p>
+        </div>
+
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="team-card">
+
+        <div class="team-photo">
+          <img
+            src="assets/client-testi2.webp"
+            alt="UI and UX designer"
+            loading="lazy"
+          >
+
+          <div class="team-socials" aria-label="Social media links">
+            <a href="404.html" aria-label="Facebook" title="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="X" title="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="Instagram" title="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <button
+            type="button"
+            class="team-social-toggle"
+            aria-label="Show social links for Sophia Bennett"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">
+              share
+            </span>
+          </button>
+        </div>
+
+        <div class="team-info">
+          <h3>Sophia Bennett</h3>
+          <p>UI/UX Designer</p>
+        </div>
+
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="team-card">
+
+        <div class="team-photo">
+          <img
+            src="assets/client-testi3.webp"
+            alt="Web developer"
+            loading="lazy"
+          >
+
+          <div class="team-socials" aria-label="Social media links">
+            <a href="404.html" aria-label="Facebook" title="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="X" title="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="Instagram" title="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <button
+            type="button"
+            class="team-social-toggle"
+            aria-label="Show social links for Daniel Carter"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">
+              share
+            </span>
+          </button>
+        </div>
+
+        <div class="team-info">
+          <h3>Daniel Carter</h3>
+          <p>Web Developer</p>
+        </div>
+
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="team-card">
+
+        <div class="team-photo">
+          <img
+            src="assets/client6.webp"
+            alt="Creative digital specialist"
+            loading="lazy"
+          >
+
+          <div class="team-socials" aria-label="Social media links">
+            <a href="404.html" aria-label="Facebook" title="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="X" title="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="Instagram" title="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <button
+            type="button"
+            class="team-social-toggle"
+            aria-label="Show social links for Ryan Mitchell"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">
+              share
+            </span>
+          </button>
+        </div>
+
+        <div class="team-info">
+          <h3>Ryan Mitchell</h3>
+          <p>Creative Specialist</p>
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- STACKLY FREELANCER CTA SECTION -->
+<section class="freelancer-cta" id="freelancer-cta">
+  <div class="freelancer-cta-inner">
+
+    <!-- LEFT CONTENT -->
+    <div class="freelancer-cta-content">
+
+      <div class="freelancer-cta-eyebrow">
+        <span class="freelancer-cta-mark">S</span>
+        <span>LET'S BUILD SOMETHING GREAT</span>
+      </div>
+
+      <h2>
+        Have an Idea?
+        <span>Let's Bring It to Life.</span>
+      </h2>
+
+      <p>
+        Looking for a creative freelancer to bring your vision online?
+        Let's collaborate and build a digital experience that stands out.
+      </p>
+
+      <div class="freelancer-cta-actions">
+        <a href="contact.html" class="freelancer-cta-button">
+          Start a Project
+        </a>
+
+        <a href="404.html" class="freelancer-cta-secondary">
+          View My Work
+        </a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="freelancer-cta-visual">
+      <div class="freelancer-cta-image">
+        <img
+          src="assets/cta-img.webp"
+          alt="Freelancer working on a laptop"
+          loading="lazy"
+        >
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =========================================
+     STACKLY FREELANCER FOOTER
+========================================= -->
+<footer class="stackly-footer" id="footer">
+
+  <div class="footer-container">
+
+    <!-- NEWSLETTER -->
+    <div class="footer-newsletter">
+
+      <div class="footer-newsletter-heading">
+        <span class="footer-eyebrow">STAY INSPIRED. STAY CREATIVE.</span>
+        <h2>Bring Better Ideas<br>To Life.</h2>
+      </div>
+
+      <div class="footer-newsletter-form">
+        <p>
+          Get creative insights, portfolio updates, and digital design
+          inspiration delivered to your inbox.
+        </p>
+
+        <form id="footerSubscribeForm" novalidate>
+          <div class="footer-form-row">
+            <div class="footer-email-field">
+              <input
+                type="email"
+                id="footerEmail"
+                name="email"
+                placeholder="Your email address"
+                aria-label="Your email address"
+                aria-describedby="footerEmailError"
+                autocomplete="email"
+                required
+              >
+              <span
+                class="footer-form-error"
+                id="footerEmailError"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <!-- FOOTER MAIN CONTENT -->
+    <div class="footer-main">
+
+      <!-- BRAND -->
+      <div class="footer-brand-column">
+
+        <a href="index.html" class="footer-logo" aria-label="Stackly Home">
+          <img src="assets/yellow-logo.webp" alt="Stackly">
+        </a>
+
+        <p class="footer-brand-description">
+          Independent creativity. Thoughtful design. Powerful digital
+          experiences built to bring your ideas to life.
+        </p>
+
+        <!-- NORMAL SOCIAL ICONS -->
+        <div class="footer-socials" aria-label="Social media">
+
+          <a href="404.html" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+
+          <a href="404.html" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a href="404.html" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+
+          <a href="404.html" aria-label="X">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-links-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="footer-links-column">
+        <h3>My Services</h3>
+        <ul>
+          <li><a href="404.html">Web Development</a></li>
+          <li><a href="404.html">UI/UX Design</a></li>
+          <li><a href="404.html">Portfolio Websites</a></li>
+          <li><a href="404.html">Responsive Design</a></li>
+          <li><a href="404.html">Creative Solutions</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="footer-contact-column">
+        <h3>Let's Connect</h3>
+
+        <p class="footer-contact-intro">
+          Have a project in mind? Let's create something meaningful together.
+        </p>
+
+        <a class="footer-contact-item" href="404.html">
+          <span class="material-symbols-outlined" aria-hidden="true">
+            location_on
+          </span>
+          <span>Salem Tamilnadu </span>
+        </a>
+
+        <a class="footer-contact-item" href="404.html">
+          <span class="material-symbols-outlined" aria-hidden="true">
+            mail
+          </span>
+          <span>help@stackly.com</span>
+        </a>
+
+        <a class="footer-contact-item" href="404.html">
+          <span class="material-symbols-outlined" aria-hidden="true">
+            call
+          </span>
+          <span>+91 9652891224</span>
+        </a>
+
+        <a href="404.html" class="footer-contact-cta">
+          Discuss Your Project
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-divider footer-bottom-divider"></div>
+
+    <!-- COPYRIGHT AND LEGAL LINKS -->
+    <div class="footer-bottom">
+
+    <p class="footer-copyright">
+  <span class="material-symbols-outlined footer-copyright-icon"
+        aria-hidden="true">copyright</span>
+  <span id="footerYear"></span> Stackly. All Rights Reserved.
+</p>
+      <div class="footer-legal-links">
+        <a href="404.html">Privacy Policy</a>
+        <a href="404.html">Terms &amp; Conditions</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

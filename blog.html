@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Freelancer Portfolio</title>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="stackly-header" id="stacklyHeader">
+    <div class="header-container">
+
+      <!-- LOGO -->
+      <a href="index.html" class="stackly-logo" aria-label="Stackly Home">
+        <img src="assets/yellow-logo.webp" alt="Stackly Logo">
+      </a>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="desktop-navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- RIGHT ACTIONS -->
+      <div class="header-actions">
+        <a href="login.html" class="header-login">Login</a>
+        <a href="signup.html" class="header-signup">Sign Up</a>
+      </div>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileNavigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- MOBILE FULL-VIEWPORT NAVIGATION -->
+    <nav
+      class="mobile-navigation"
+      id="mobileNavigation"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+      inert
+    >
+      <div class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="blog.html" class="mobile-nav-link active">Blog</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+        <div class="mobile-auth-links">
+          <a href="login.html" class="mobile-login">Login</a>
+          <a href="signup.html" class="mobile-signup">Sign Up</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-footer">
+        <span>CREATIVE MINDS. DIGITAL EXPERIENCES.</span>
+      </div>
+    </nav>
+
+  </header>
+
+<!-- BLOG HERO SECTION -->
+<section class="fp-blog-hero">
+  <div class="fp-blog-hero-bg"></div>
+  <div class="fp-blog-hero-overlay"></div>
+
+  <div class="fp-blog-hero-content">
+    <h1 class="fp-blog-hero-title">Our Blog</h1>
+
+    <nav class="fp-blog-breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="material-symbols-outlined">chevron_right</span>
+      <span class="fp-blog-current">Blog</span>
+    </nav>
+  </div>
+</section>
+
+
+<!-- ===== FREELANCER BLOG SECTION ===== -->
+<section class="fp-blog-section" id="fp-latest-blog">
+
+  <div class="fp-blog-container">
+
+    <!-- SECTION HEADER -->
+    <div class="fp-blog-header">
+
+      <div class="fp-blog-heading fp-blog-heading-reveal">
+        <div class="fp-blog-label">
+          <span class="material-symbols-outlined">edit_note</span>
+          <span>INSIGHTS & IDEAS</span>
+        </div>
+
+        <h2>
+          Ideas That Inspire
+          <span>Creative Digital Growth</span>
+        </h2>
+      </div>
+
+      <div class="fp-blog-intro fp-blog-intro-reveal">
+        <p>
+          Explore creative insights, design inspiration, and practical
+          strategies to build better websites and powerful digital
+          experiences for your business.
+        </p>
+
+        <a href="404.html" class="fp-blog-all-btn">
+          See All Articles
+        </a>
+      </div>
+
+    </div>
+
+    <!-- BLOG CARDS -->
+    <div class="fp-blog-grid">
+
+      <!-- CARD 1 -->
+      <article class="fp-blog-card fp-blog-card-left">
+
+        <a href="404.html" class="fp-blog-image">
+          <img
+            src="assets/creative-agency.webp"
+            alt="Creative designer working on a digital project"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="fp-blog-meta">
+          <span class="material-symbols-outlined">person</span>
+          <span>Creative Design</span>
+          <span class="material-symbols-outlined fp-blog-folder">folder_open</span>
+          <span>Design Ideas</span>
+        </div>
+
+        <h3>
+          <a href="404.html">
+            The Art of Creating Memorable Digital Experiences
+          </a>
+        </h3>
+
+        <p class="fp-blog-description">
+          Discover how thoughtful design, clear layouts, and engaging
+          visuals can make your website stand out from the crowd.
+        </p>
+
+        <a href="404.html" class="fp-blog-read-btn">
+          READ ARTICLE
+        </a>
+
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="fp-blog-card fp-blog-card-right">
+
+        <a href="404.html" class="fp-blog-image">
+          <img
+            src="assets/project2.webp"
+            alt="Developers collaborating on website development"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="fp-blog-meta">
+          <span class="material-symbols-outlined">person</span>
+          <span>Web Development</span>
+          <span class="material-symbols-outlined fp-blog-folder">folder_open</span>
+          <span>Technology</span>
+        </div>
+
+        <h3>
+          <a href="404.html">
+            Building Responsive Websites That Work Everywhere
+          </a>
+        </h3>
+
+        <p class="fp-blog-description">
+          Learn why responsive layouts, clean code, and performance
+          optimization are essential for modern websites.
+        </p>
+
+        <a href="404.html" class="fp-blog-read-btn">
+          READ ARTICLE
+        </a>
+
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="fp-blog-card fp-blog-card-left">
+
+        <a href="404.html" class="fp-blog-image">
+          <img
+            src="assets/team-work.webp"
+            alt="Creative team planning a digital strategy"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="fp-blog-meta">
+          <span class="material-symbols-outlined">person</span>
+          <span>Creative Strategy</span>
+          <span class="material-symbols-outlined fp-blog-folder">folder_open</span>
+          <span>Freelancing</span>
+        </div>
+
+        <h3>
+          <a href="404.html">
+            Turning Creative Ideas Into Successful Online Projects
+          </a>
+        </h3>
+
+        <p class="fp-blog-description">
+          Explore practical ways to transform your ideas into useful
+          digital products that connect with the right audience.
+        </p>
+
+        <a href="404.html" class="fp-blog-read-btn">
+          READ ARTICLE
+        </a>
+
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FREELANCER BLOG EDITORIAL SECTION ===== -->
+<section class="fp-editorial-section" id="fp-editorial">
+
+  <div class="fp-editorial-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="fp-editorial-content fp-editorial-left">
+
+      <div class="fp-editorial-label">
+        <span class="material-symbols-outlined">auto_awesome</span>
+        <span>THE CREATIVE JOURNAL</span>
+      </div>
+ <h2 class="fp-editorial-heading">
+  Fresh Perspectives for
+  <span>Your Next Big Idea</span>
+</h2>
+
+      <p class="fp-editorial-description">
+        Explore fresh perspectives on web design, development, and
+        creative thinking. Discover practical ideas that help you
+        build stronger brands and more engaging online experiences.
+      </p>
+
+      <!-- FEATURE ITEMS -->
+      <div class="fp-editorial-features">
+
+        <div class="fp-editorial-feature">
+          <div class="fp-editorial-icon">
+            <span class="material-symbols-outlined">palette</span>
+          </div>
+
+          <h3>Design That Connects</h3>
+
+          <p>
+            Discover visual strategies that make websites memorable,
+            intuitive, and enjoyable to explore.
+          </p>
+        </div>
+
+        <div class="fp-editorial-feature">
+          <div class="fp-editorial-icon">
+            <span class="material-symbols-outlined">code_blocks</span>
+          </div>
+
+          <h3>Smarter Web Experiences</h3>
+
+          <p>
+            Explore modern development techniques for responsive,
+            accessible, and high-performing websites.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="fp-editorial-divider"></div>
+
+      <!-- HIGHLIGHTS -->
+      <div class="fp-editorial-highlights">
+
+        <div class="fp-editorial-highlight">
+          <span class="material-symbols-outlined">check_circle</span>
+          <span>Practical Creative Insights</span>
+        </div>
+
+        <div class="fp-editorial-highlight">
+          <span class="material-symbols-outlined">check_circle</span>
+          <span>Ideas For Your Next Project</span>
+        </div>
+
+      </div>
+
+      <a href="404.html" class="fp-editorial-button">
+        Explore The Journal
+      </a>
+
+    </div>
+
+    <!-- RIGHT FLOWER-SHAPED IMAGE -->
+    <div class="fp-editorial-visual fp-editorial-right">
+
+      <div class="fp-editorial-image-wrap">
+        <img
+          src="assets/editorial-team.webp"
+          alt="Creative professionals collaborating on a digital project"
+          class="fp-editorial-image"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="fp-editorial-image-caption">
+        <span class="material-symbols-outlined">lightbulb</span>
+        <div>
+          <strong>Ideas Worth Exploring</strong>
+          <span>Design · Development · Creativity</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== CREATIVE INSIGHTS FLIP CARDS ===== -->
+<section class="fp-insights-section" id="fp-insights">
+
+  <div class="fp-insights-container">
+
+    <!-- SECTION HEADING -->
+    <div class="fp-insights-heading fp-insights-heading-reveal">
+
+      <div class="fp-insights-label">
+        <span class="material-symbols-outlined">lightbulb</span>
+        <span>IDEAS IN MOTION</span>
+      </div>
+
+      <h2>
+        A New Perspective on
+        <span>Digital Creativity</span>
+      </h2>
+
+      <p>
+        Explore the thinking behind better digital experiences.
+        Discover fresh approaches to design, technology, and building
+        a memorable online presence.
+      </p>
+
+    </div>
+
+    <!-- FLIP CARDS -->
+    <div class="fp-insights-grid">
+
+      <!-- CARD 1 -->
+      <article class="fp-insight-card fp-insight-left" tabindex="0">
+
+        <div class="fp-insight-card-inner">
+
+          <div class="fp-insight-card-front">
+            <span class="fp-insight-number">01</span>
+
+            <div class="fp-insight-icon">
+              <span class="material-symbols-outlined">draw</span>
+            </div>
+
+            <h3>Design With Purpose</h3>
+
+            <p>
+              Create digital interfaces that feel clear, thoughtful,
+              and effortless to use.
+            </p>
+
+            <span class="fp-insight-hint">EXPLORE INSIGHT</span>
+          </div>
+
+          <div class="fp-insight-card-back">
+            <span class="fp-insight-back-icon material-symbols-outlined">
+              design_services
+            </span>
+
+            <h3>Every Detail Matters</h3>
+
+            <p>
+              Strong typography, meaningful spacing, and consistent
+              visual language help transform an ordinary interface
+              into a memorable experience.
+            </p>
+
+            <a href="404.html" class="fp-insight-link">
+              READ INSIGHT
+            </a>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="fp-insight-card fp-insight-right" tabindex="0">
+
+        <div class="fp-insight-card-inner">
+
+          <div class="fp-insight-card-front">
+            <span class="fp-insight-number">02</span>
+
+            <div class="fp-insight-icon">
+              <span class="material-symbols-outlined">terminal</span>
+            </div>
+
+            <h3>Build Beyond Basics</h3>
+
+            <p>
+              Turn ambitious ideas into responsive, reliable digital
+              products using modern development practices.
+            </p>
+
+            <span class="fp-insight-hint">EXPLORE INSIGHT</span>
+          </div>
+
+          <div class="fp-insight-card-back">
+            <span class="fp-insight-back-icon material-symbols-outlined">
+              developer_mode
+            </span>
+
+            <h3>Code With Intention</h3>
+
+            <p>
+              Reusable components, accessible markup, and efficient
+              code create websites that are easier to maintain,
+              improve, and scale.
+            </p>
+
+            <a href="404.html" class="fp-insight-link">
+              READ INSIGHT
+            </a>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="fp-insight-card fp-insight-left" tabindex="0">
+
+        <div class="fp-insight-card-inner">
+
+          <div class="fp-insight-card-front">
+            <span class="fp-insight-number">03</span>
+
+            <div class="fp-insight-icon">
+              <span class="material-symbols-outlined">animation</span>
+            </div>
+
+            <h3>Motion With Meaning</h3>
+
+            <p>
+              Use smooth interactions and purposeful animation to
+              bring your digital storytelling to life.
+            </p>
+
+            <span class="fp-insight-hint">EXPLORE INSIGHT</span>
+          </div>
+
+          <div class="fp-insight-card-back">
+            <span class="fp-insight-back-icon material-symbols-outlined">
+              motion_mode
+            </span>
+
+            <h3>Make Every Interaction Count</h3>
+
+            <p>
+              Thoughtful transitions guide attention, provide feedback,
+              and make a website feel more natural without distracting
+              visitors from its content.
+            </p>
+
+            <a href="404.html" class="fp-insight-link">
+              READ INSIGHT
+            </a>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="fp-insight-card fp-insight-right" tabindex="0">
+
+        <div class="fp-insight-card-inner">
+
+          <div class="fp-insight-card-front">
+            <span class="fp-insight-number">04</span>
+
+            <div class="fp-insight-icon">
+              <span class="material-symbols-outlined">speed</span>
+            </div>
+
+            <h3>Performance Matters</h3>
+
+            <p>
+              Deliver faster, smoother websites that respect every
+              visitor's time and device.
+            </p>
+
+            <span class="fp-insight-hint">EXPLORE INSIGHT</span>
+          </div>
+
+          <div class="fp-insight-card-back">
+            <span class="fp-insight-back-icon material-symbols-outlined">
+              monitoring
+            </span>
+
+            <h3>Fast Feels Better</h3>
+
+            <p>
+              Optimized images, efficient scripts, and responsive
+              layouts help improve usability and create a smoother
+              browsing experience.
+            </p>
+
+            <a href="404.html" class="fp-insight-link">
+              READ INSIGHT
+            </a>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- STACKLY CREATIVE TEAM SECTION -->
+<section class="stackly-team" id="our-team">
+
+  <div class="team-container">
+
+    <!-- SECTION HEADER -->
+    <div class="team-header">
+
+      <div class="team-heading-block">
+        <div class="team-eyebrow">
+          <span class="team-brand-mark">S</span>
+          <span>OUR CREATIVE TEAM</span>
+        </div>
+
+        <h2 class="team-title">
+          Meet the Creative Minds
+          <span>Behind Stackly</span>
+        </h2>
+      </div>
+
+      <div class="team-intro">
+        <p>
+          Creative thinkers and passionate developers bringing ideas
+          to life through thoughtful design and modern technology.
+        </p>
+
+        <a href="404.html" class="team-explore-btn">
+          Explore More
+        </a>
+      </div>
+
+    </div>
+
+    <!-- TEAM CARDS -->
+    <div class="team-grid">
+
+      <!-- CARD 1 -->
+      <article class="team-card">
+
+        <div class="team-photo">
+          <img
+            src="assets/client-testi1.webp"
+            alt="Frontend developer"
+            loading="lazy"
+          >
+
+          <div class="team-socials" aria-label="Social media links">
+            <a href="404.html" aria-label="Facebook" title="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="X" title="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="Instagram" title="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <button
+            type="button"
+            class="team-social-toggle"
+            aria-label="Show social links for Alex Morgan"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">
+              share
+            </span>
+          </button>
+        </div>
+
+        <div class="team-info">
+          <h3>Alex Morgan</h3>
+          <p>Frontend Developer</p>
+        </div>
+
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="team-card">
+
+        <div class="team-photo">
+          <img
+            src="assets/client-testi2.webp"
+            alt="UI and UX designer"
+            loading="lazy"
+          >
+
+          <div class="team-socials" aria-label="Social media links">
+            <a href="404.html" aria-label="Facebook" title="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="X" title="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="Instagram" title="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <button
+            type="button"
+            class="team-social-toggle"
+            aria-label="Show social links for Sophia Bennett"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">
+              share
+            </span>
+          </button>
+        </div>
+
+        <div class="team-info">
+          <h3>Sophia Bennett</h3>
+          <p>UI/UX Designer</p>
+        </div>
+
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="team-card">
+
+        <div class="team-photo">
+          <img
+            src="assets/client-testi3.webp"
+            alt="Web developer"
+            loading="lazy"
+          >
+
+          <div class="team-socials" aria-label="Social media links">
+            <a href="404.html" aria-label="Facebook" title="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="X" title="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="Instagram" title="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <button
+            type="button"
+            class="team-social-toggle"
+            aria-label="Show social links for Daniel Carter"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">
+              share
+            </span>
+          </button>
+        </div>
+
+        <div class="team-info">
+          <h3>Daniel Carter</h3>
+          <p>Web Developer</p>
+        </div>
+
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="team-card">
+
+        <div class="team-photo">
+          <img
+            src="assets/client6.webp"
+            alt="Creative digital specialist"
+            loading="lazy"
+          >
+
+          <div class="team-socials" aria-label="Social media links">
+            <a href="404.html" aria-label="Facebook" title="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="X" title="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="Instagram" title="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="404.html" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <button
+            type="button"
+            class="team-social-toggle"
+            aria-label="Show social links for Ryan Mitchell"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">
+              share
+            </span>
+          </button>
+        </div>
+
+        <div class="team-info">
+          <h3>Ryan Mitchell</h3>
+          <p>Creative Specialist</p>
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- =========================================
+     STACKLY FREELANCER FOOTER
+========================================= -->
+<footer class="stackly-footer" id="footer">
+
+  <div class="footer-container">
+
+    <!-- NEWSLETTER -->
+    <div class="footer-newsletter">
+
+      <div class="footer-newsletter-heading">
+        <span class="footer-eyebrow">STAY INSPIRED. STAY CREATIVE.</span>
+        <h2>Bring Better Ideas<br>To Life.</h2>
+      </div>
+
+      <div class="footer-newsletter-form">
+        <p>
+          Get creative insights, portfolio updates, and digital design
+          inspiration delivered to your inbox.
+        </p>
+
+        <form id="footerSubscribeForm" novalidate>
+          <div class="footer-form-row">
+            <div class="footer-email-field">
+              <input
+                type="email"
+                id="footerEmail"
+                name="email"
+                placeholder="Your email address"
+                aria-label="Your email address"
+                aria-describedby="footerEmailError"
+                autocomplete="email"
+                required
+              >
+              <span
+                class="footer-form-error"
+                id="footerEmailError"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <!-- FOOTER MAIN CONTENT -->
+    <div class="footer-main">
+
+      <!-- BRAND -->
+      <div class="footer-brand-column">
+
+        <a href="index.html" class="footer-logo" aria-label="Stackly Home">
+          <img src="assets/yellow-logo.webp" alt="Stackly">
+        </a>
+
+        <p class="footer-brand-description">
+          Independent creativity. Thoughtful design. Powerful digital
+          experiences built to bring your ideas to life.
+        </p>
+
+        <!-- NORMAL SOCIAL ICONS -->
+        <div class="footer-socials" aria-label="Social media">
+
+          <a href="404.html" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+
+          <a href="404.html" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a href="404.html" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+
+          <a href="404.html" aria-label="X">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-links-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="footer-links-column">
+        <h3>My Services</h3>
+        <ul>
+          <li><a href="404.html">Web Development</a></li>
+          <li><a href="404.html">UI/UX Design</a></li>
+          <li><a href="404.html">Portfolio Websites</a></li>
+          <li><a href="404.html">Responsive Design</a></li>
+          <li><a href="404.html">Creative Solutions</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="footer-contact-column">
+        <h3>Let's Connect</h3>
+
+        <p class="footer-contact-intro">
+          Have a project in mind? Let's create something meaningful together.
+        </p>
+
+        <a class="footer-contact-item" href="404.html">
+          <span class="material-symbols-outlined" aria-hidden="true">
+            location_on
+          </span>
+          <span>Salem Tamilnadu </span>
+        </a>
+
+        <a class="footer-contact-item" href="404.html">
+          <span class="material-symbols-outlined" aria-hidden="true">
+            mail
+          </span>
+          <span>help@stackly.com</span>
+        </a>
+
+        <a class="footer-contact-item" href="404.html">
+          <span class="material-symbols-outlined" aria-hidden="true">
+            call
+          </span>
+          <span>+91 9652891224</span>
+        </a>
+
+        <a href="404.html" class="footer-contact-cta">
+          Discuss Your Project
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-divider footer-bottom-divider"></div>
+
+    <!-- COPYRIGHT AND LEGAL LINKS -->
+    <div class="footer-bottom">
+
+    <p class="footer-copyright">
+  <span class="material-symbols-outlined footer-copyright-icon"
+        aria-hidden="true">copyright</span>
+  <span id="footerYear"></span> Stackly. All Rights Reserved.
+</p>
+      <div class="footer-legal-links">
+        <a href="404.html">Privacy Policy</a>
+        <a href="404.html">Terms &amp; Conditions</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

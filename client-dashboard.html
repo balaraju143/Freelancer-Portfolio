@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080d0a" />
+  <title>Client Dashboard | Stackly Creative</title>
+
+  <link rel="stylesheet" href="css/client-dashboard.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="cd-app">
+
+    <!-- MOBILE SIDEBAR OVERLAY -->
+    <div class="cd-sidebar-overlay" id="cdSidebarOverlay"></div>
+
+    <!-- SIDEBAR -->
+    <aside class="cd-sidebar" id="cdSidebar">
+
+    
+<a href="#overview" class="cd-brand" data-view="overview" aria-label="Stackly Home">
+  <img
+    src="assets/yellow-logo.webp"
+    alt="Stackly"
+    class="cd-brand-image"
+  />
+</a>
+
+
+      <div class="cd-user-card">
+        <div class="cd-avatar" data-user-initial>U</div>
+        <div class="cd-user-info">
+          <strong data-user-email>Client Workspace</strong>
+          <span data-user-email-full>Welcome to Stackly</span>
+          <small>CLIENT ACCOUNT</small>
+        </div>
+      </div>
+
+      <div class="cd-sidebar-label">WORKSPACE</div>
+
+      <nav class="cd-navigation" aria-label="Client dashboard navigation">
+        <a href="#overview" class="cd-nav-link active" data-view="overview">
+          <span class="material-symbols-outlined">grid_view</span>
+          <span>Overview</span>
+        </a>
+
+        <a href="#projects" class="cd-nav-link" data-view="projects">
+          <span class="material-symbols-outlined">folder_open</span>
+          <span>My Projects</span>
+          <small class="cd-nav-count">04</small>
+        </a>
+
+        <a href="#portfolio" class="cd-nav-link" data-view="portfolio">
+          <span class="material-symbols-outlined">dashboard_customize</span>
+          <span>Portfolio</span>
+        </a>
+
+        <a href="#messages" class="cd-nav-link" data-view="messages">
+          <span class="material-symbols-outlined">chat</span>
+          <span>Messages</span>
+          <small class="cd-nav-count">02</small>
+        </a>
+
+        <a href="#profile" class="cd-nav-link" data-view="profile">
+          <span class="material-symbols-outlined">account_circle</span>
+          <span>My Profile</span>
+        </a>
+      </nav>
+
+      <div class="cd-sidebar-bottom">
+        <div class="cd-help-card">
+          <span class="material-symbols-outlined">tips_and_updates</span>
+          <strong>Have a new idea?</strong>
+          <p>Let's turn your vision into a digital experience.</p>
+          <a href="404.html">Discuss a Project</a>
+        </div>
+
+        <a href="login.html" class="cd-logout-link">
+          <span class="material-symbols-outlined">logout</span>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- MAIN WORKSPACE -->
+    <main class="cd-main">
+
+      <!-- TOP HEADER -->
+      <header class="cd-header">
+
+        <div class="cd-header-title">
+          <button
+            class="cd-menu-toggle"
+            id="cdMenuToggle"
+            type="button"
+            aria-label="Open dashboard menu"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+
+          <div>
+            <h1 id="cdPageTitle">Overview</h1>
+            <p id="cdPageSubtitle">Your creative workspace at a glance.</p>
+          </div>
+        </div>
+
+        <div class="cd-header-actions">
+          <button
+            type="button"
+            class="cd-search-button"
+            id="cdSearchButton"
+            aria-label="Search workspace"
+          >
+            <span class="material-symbols-outlined">search</span>
+            <span>Search your workspace</span>
+          </button>
+
+          <button
+            type="button"
+            class="cd-icon-button"
+            id="cdNotificationsButton"
+            aria-label="Notifications"
+            title="Notifications"
+          >
+            <span class="material-symbols-outlined">notifications</span>
+            <span class="cd-notification-dot"></span>
+          </button>
+
+          <button
+            type="button"
+            class="cd-header-avatar"
+            id="cdProfileButton"
+            data-user-initial
+            aria-label="Open profile"
+          >U</button>
+        </div>
+      </header>
+
+      <!-- ALL VIEWS RENDER INSIDE THIS SINGLE CONTAINER -->
+      <div class="cd-content" id="cdContent">
+
+        <!-- OVERVIEW -->
+        <section class="cd-view active" id="view-overview" data-page="overview">
+
+          <div class="cd-welcome-banner">
+            <div class="cd-welcome-copy">
+              <span class="cd-overline">YOUR CREATIVE SPACE</span>
+              <h2>Good things start with <span>an idea.</span></h2>
+              <p>
+                Welcome to your Stackly workspace. Keep track of projects,
+                explore creative work, and plan what comes next.
+              </p>
+            </div>
+
+            <a href="#projects" class="cd-primary-button" data-view="projects">
+              Explore My Projects
+            </a>
+          </div>
+
+          <div class="cd-section-heading">
+            <div>
+              <span class="cd-overline">YOUR WORKSPACE</span>
+              <h2>Workspace Overview</h2>
+              <p>A quick look at your current creative activity.</p>
+            </div>
+          </div>
+
+          <div class="cd-stats-grid">
+            <article class="cd-stat-card">
+              <div class="cd-stat-top">
+                <span class="cd-stat-icon green">
+                  <span class="material-symbols-outlined">folder_open</span>
+                </span>
+                <span class="cd-stat-label">PROJECTS</span>
+              </div>
+              <strong>04</strong>
+              <p>Projects in your workspace</p>
+              <div class="cd-stat-bottom">Stay organized and focused</div>
+            </article>
+
+            <article class="cd-stat-card">
+              <div class="cd-stat-top">
+                <span class="cd-stat-icon lime">
+                  <span class="material-symbols-outlined">task_alt</span>
+                </span>
+                <span class="cd-stat-label">COMPLETED</span>
+              </div>
+              <strong>12</strong>
+              <p>Creative milestones achieved</p>
+              <div class="cd-stat-bottom">Progress built step by step</div>
+            </article>
+
+            <article class="cd-stat-card">
+              <div class="cd-stat-top">
+                <span class="cd-stat-icon purple">
+                  <span class="material-symbols-outlined">chat</span>
+                </span>
+                <span class="cd-stat-label">MESSAGES</span>
+              </div>
+              <strong>02</strong>
+              <p>Recent workspace updates</p>
+              <div class="cd-stat-bottom">Keep every conversation moving</div>
+            </article>
+
+            <article class="cd-stat-card">
+              <div class="cd-stat-top">
+                <span class="cd-stat-icon orange">
+                  <span class="material-symbols-outlined">lightbulb</span>
+                </span>
+                <span class="cd-stat-label">NEW IDEAS</span>
+              </div>
+              <strong>03</strong>
+              <p>Ideas ready to explore</p>
+              <div class="cd-stat-bottom">Your next project starts here</div>
+            </article>
+          </div>
+
+          <div class="cd-overview-grid">
+
+            <section class="cd-panel cd-project-panel">
+              <div class="cd-panel-heading">
+                <div>
+                  <h3>Recent Projects</h3>
+                  <p>Your latest creative work.</p>
+                </div>
+                <a href="#projects" data-view="projects" class="cd-text-link">View All</a>
+              </div>
+
+              <div class="cd-project-list">
+
+                <article class="cd-project-row">
+                  <div class="cd-project-symbol project-one">
+                    <span class="material-symbols-outlined">web</span>
+                  </div>
+                  <div class="cd-project-info">
+                    <strong>Portfolio Website</strong>
+                    <span>Website Design · Updated recently</span>
+                  </div>
+                  <span class="cd-status status-progress">In Progress</span>
+                </article>
+
+                <article class="cd-project-row">
+                  <div class="cd-project-symbol project-two">
+                    <span class="material-symbols-outlined">devices</span>
+                  </div>
+                  <div class="cd-project-info">
+                    <strong>Responsive Landing Page</strong>
+                    <span>Web Development · Design review</span>
+                  </div>
+                  <span class="cd-status status-review">In Review</span>
+                </article>
+
+                <article class="cd-project-row">
+                  <div class="cd-project-symbol project-three">
+                    <span class="material-symbols-outlined">palette</span>
+                  </div>
+                  <div class="cd-project-info">
+                    <strong>Brand Identity Concept</strong>
+                    <span>Visual Design · Recently updated</span>
+                  </div>
+                  <span class="cd-status status-complete">Completed</span>
+                </article>
+
+                <article class="cd-project-row">
+                  <div class="cd-project-symbol project-four">
+                    <span class="material-symbols-outlined">auto_awesome</span>
+                  </div>
+                  <div class="cd-project-info">
+                    <strong>Creative Experience</strong>
+                    <span>Interactive Design · Planning</span>
+                  </div>
+                  <span class="cd-status status-planning">Planning</span>
+                </article>
+
+              </div>
+            </section>
+
+            <section class="cd-panel cd-focus-panel">
+              <div class="cd-panel-heading">
+                <div>
+                  <h3>Creative Focus</h3>
+                  <p>Areas to explore next.</p>
+                </div>
+              </div>
+
+              <div class="cd-focus-feature">
+                <div class="cd-focus-graphic">
+                  <span class="material-symbols-outlined">draw</span>
+                </div>
+                <span class="cd-focus-tag">DESIGN</span>
+                <h4>Make the first impression count.</h4>
+                <p>
+                  Explore fresh visual directions and create a consistent
+                  digital identity for your next project.
+                </p>
+              </div>
+
+              <a href="#portfolio" data-view="portfolio" class="cd-outline-button">
+                Explore Portfolio
+              </a>
+            </section>
+
+          </div>
+
+          <section class="cd-bottom-banner">
+            <div>
+              <span class="cd-overline">YOUR NEXT BIG IDEA</span>
+              <h3>Have something new in mind?</h3>
+              <p>Let's discuss your requirements and find the right creative direction.</p>
+            </div>
+            <a href="contact.html" class="cd-primary-button">Start a Conversation</a>
+          </section>
+
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="cd-view" id="view-projects" data-page="projects">
+          <div class="cd-page-intro">
+            <span class="cd-overline">PLAN. CREATE. DELIVER.</span>
+            <h2>My Projects</h2>
+            <p>Review your project concepts, progress, and creative milestones.</p>
+          </div>
+
+          <div class="cd-project-summary-grid">
+            <article class="cd-mini-card">
+              <span class="material-symbols-outlined">folder_open</span>
+              <strong>04</strong>
+              <p>Total Projects</p>
+            </article>
+            <article class="cd-mini-card">
+              <span class="material-symbols-outlined">pending_actions</span>
+              <strong>02</strong>
+              <p>In Progress</p>
+            </article>
+            <article class="cd-mini-card">
+              <span class="material-symbols-outlined">task_alt</span>
+              <strong>01</strong>
+              <p>Completed</p>
+            </article>
+          </div>
+
+          <section class="cd-panel cd-full-panel">
+            <div class="cd-panel-heading">
+              <div>
+                <h3>All Projects</h3>
+                <p>Example projects for your freelancer workspace.</p>
+              </div>
+              <a href="404.html" class="cd-primary-button">Request a Project</a>
+            </div>
+
+            <div class="cd-table-wrap">
+              <table class="cd-project-table">
+                <thead>
+                  <tr>
+                    <th>Project</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Portfolio Website</strong><span>PRJ-001</span></td>
+                    <td>Web Design</td>
+                    <td><span class="cd-status status-progress">In Progress</span></td>
+                    <td><a href="404.html" class="cd-small-link">View Details</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Responsive Landing Page</strong><span>PRJ-002</span></td>
+                    <td>Development</td>
+                    <td><span class="cd-status status-review">In Review</span></td>
+                    <td><a href="404.html" class="cd-small-link">View Details</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Brand Identity Concept</strong><span>PRJ-003</span></td>
+                    <td>Visual Design</td>
+                    <td><span class="cd-status status-complete">Completed</span></td>
+                    <td><a href="404.html" class="cd-small-link">View Details</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Creative Experience</strong><span>PRJ-004</span></td>
+                    <td>Interactive Design</td>
+                    <td><span class="cd-status status-planning">Planning</span></td>
+                    <td><a href="404.html" class="cd-small-link">View Details</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="cd-bottom-banner">
+            <div>
+              <span class="cd-overline">GOT ANOTHER IDEA?</span>
+              <h3>Your next project could start today.</h3>
+              <p>Share your goals and explore possibilities for your next digital experience.</p>
+            </div>
+            <a href="contact.html" class="cd-primary-button">Discuss Your Idea</a>
+          </section>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="cd-view" id="view-portfolio" data-page="portfolio">
+          <div class="cd-page-intro">
+            <span class="cd-overline">CREATIVITY IN ACTION</span>
+            <h2>Creative Portfolio</h2>
+            <p>Explore sample creative categories and inspiration for your next project.</p>
+          </div>
+
+          <div class="cd-portfolio-grid">
+            <article class="cd-portfolio-card">
+              <div class="cd-portfolio-art art-web">
+                <span class="material-symbols-outlined">language</span>
+                <span class="cd-art-label">01 / WEB</span>
+              </div>
+              <div class="cd-portfolio-info">
+                <span>WEB DESIGN</span>
+                <h3>Digital Experiences</h3>
+                <p>Modern layouts, clear content, and responsive interfaces.</p>
+                <a href="404.html" class="cd-small-link">Explore Concept</a>
+              </div>
+            </article>
+
+            <article class="cd-portfolio-card">
+              <div class="cd-portfolio-art art-brand">
+                <span class="material-symbols-outlined">palette</span>
+                <span class="cd-art-label">02 / BRAND</span>
+              </div>
+              <div class="cd-portfolio-info">
+                <span>BRAND DESIGN</span>
+                <h3>Visual Identity</h3>
+                <p>Distinctive colors, visual systems, and brand consistency.</p>
+                <a href="404.html" class="cd-small-link">Explore Concept</a>
+              </div>
+            </article>
+
+            <article class="cd-portfolio-card">
+              <div class="cd-portfolio-art art-motion">
+                <span class="material-symbols-outlined">animation</span>
+                <span class="cd-art-label">03 / MOTION</span>
+              </div>
+              <div class="cd-portfolio-info">
+                <span>INTERACTIVE DESIGN</span>
+                <h3>Motion & Interaction</h3>
+                <p>Thoughtful animation that adds energy to digital products.</p>
+                <a href="404.html" class="cd-small-link">Explore Concept</a>
+              </div>
+            </article>
+          </div>
+
+          <section class="cd-bottom-banner">
+            <div>
+              <span class="cd-overline">MADE FOR YOUR VISION</span>
+              <h3>Let's build something original.</h3>
+              <p>Bring your ideas, goals, and inspiration to the table.</p>
+            </div>
+            <a href="contact.html" class="cd-primary-button">Contact Stackly</a>
+          </section>
+        </section>
+
+        <!-- MESSAGES -->
+        <section class="cd-view" id="view-messages" data-page="messages">
+          <div class="cd-page-intro">
+            <span class="cd-overline">STAY CONNECTED</span>
+            <h2>Messages & Updates</h2>
+            <p>Keep track of communication and important creative updates.</p>
+          </div>
+
+          <div class="cd-message-layout">
+            <section class="cd-panel cd-message-list">
+              <div class="cd-panel-heading">
+                <div>
+                  <h3>Recent Activity</h3>
+                  <p>Sample conversations for the dashboard preview.</p>
+                </div>
+              </div>
+
+              <article class="cd-message-item">
+                <div class="cd-message-avatar">S</div>
+                <div>
+                  <strong>Stackly Creative Team</strong>
+                  <span>Welcome to your new workspace.</span>
+                  <small>Welcome message</small>
+                </div>
+                <span class="cd-message-indicator"></span>
+              </article>
+
+              <article class="cd-message-item">
+                <div class="cd-message-avatar alt">P</div>
+                <div>
+                  <strong>Project Updates</strong>
+                  <span>Keep your goals and creative direction organized.</span>
+                  <small>Workspace update</small>
+                </div>
+              </article>
+
+              <a href="404.html" class="cd-outline-button cd-message-action">
+                Open Message Center
+              </a>
+            </section>
+
+            <section class="cd-panel cd-message-help">
+              <span class="cd-stat-icon green">
+                <span class="material-symbols-outlined">support_agent</span>
+              </span>
+              <h3>Need to discuss something?</h3>
+              <p>
+                For a new project, service inquiry, or collaboration request,
+                contact the Stackly team.
+              </p>
+              <a href="contact.html" class="cd-primary-button">Contact the Team</a>
+            </section>
+          </div>
+        </section>
+
+        <!-- PROFILE -->
+        <section class="cd-view" id="view-profile" data-page="profile">
+          <div class="cd-page-intro">
+            <span class="cd-overline">YOUR ACCOUNT</span>
+            <h2>My Profile</h2>
+            <p>Review the account information used for your workspace.</p>
+          </div>
+
+          <section class="cd-panel cd-profile-panel">
+            <div class="cd-profile-cover"></div>
+
+            <div class="cd-profile-body">
+              <div class="cd-profile-avatar" data-user-initial>U</div>
+
+              <div class="cd-profile-heading">
+                <h3 data-user-email>Client Workspace</h3>
+                <p data-user-email-full>Welcome to Stackly</p>
+                <span class="cd-profile-badge">CLIENT ACCOUNT</span>
+              </div>
+
+              <div class="cd-profile-details">
+                <div>
+                  <span>EMAIL ADDRESS</span>
+                  <strong data-user-email-full>Not available</strong>
+                </div>
+                <div>
+                  <span>ACCOUNT TYPE</span>
+                  <strong>Client</strong>
+                </div>
+                <div>
+                  <span>WORKSPACE</span>
+                  <strong>Stackly Creative</strong>
+                </div>
+              </div>
+
+              <p class="cd-profile-note">
+                Profile details shown here are populated from the email
+                used during login. Profile editing can be connected to your
+                account backend when available.
+              </p>
+
+              <a href="404.html" class="cd-primary-button">Edit Profile</a>
+            </div>
+          </section>
+        </section>
+
+      </div>
+
+      <footer class="cd-footer">
+        <span>© <span id="cdCurrentYear"></span> Stackly Creative</span>
+        <span>Designed for ideas that move forward.</span>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="js/client-dashboard.js"></script>
+</body>
+</html>
